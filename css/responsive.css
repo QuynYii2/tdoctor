@@ -6,6 +6,11 @@
     max-width: 1700px;
   }
 }
+@media (min-width: 768px) {
+  .body .topboard_area .form-article .article-mobile {
+    display: none;
+  }
+}
 @media (min-width: 992px) {
   .header-mobile {
     display: none;
@@ -51,17 +56,11 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .footer .footer-left {
-    margin-right: 10px;
+  .body .topboard_area .form-article .article-desktop {
+    display: none;
   }
-  .footer .footer-center {
-    margin-right: 10px;
-  }
-  .footer h3 {
-    font-size: 16px;
-  }
-  .footer p {
-    font-size: 13px;
+  .footer {
+    display: none !important;
   }
   .bottom_copyarea {
     font-size: 12px;
@@ -85,33 +84,35 @@
   .body .topboard_area {
     margin-top: 20px;
   }
-  .body .topboard_area .article .nav-tabs .nav-link {
-    font-size: 15px;
+  .body .topboard_area .form-article .nav-tabs .nav-link {
+    margin: 0 3px;
+    padding: 5px;
+    font-size: 12px;
     font-weight: 400;
   }
-  .body .topboard_area .article .nav-tabs .nav-link.active {
+  .body .topboard_area .form-article .nav-tabs .nav-link.active {
     border-bottom: 3px solid #0cbff1;
     color: black;
     font-weight: 700;
   }
-  .body .topboard_area .article .article .article_1_left {
+  .body .topboard_area .form-article .article .article-mobile .article_1_left {
     border-right: 1px solid #ccc;
   }
-  .body .topboard_area .article .article .article_1_left .left--header {
+  .body .topboard_area .form-article .article .article-mobile .article_1_left .left--header {
     font-size: 17px;
   }
-  .body .topboard_area .article .article .article_1_left .left--header i {
+  .body .topboard_area .form-article .article .article-mobile .article_1_left .left--header i {
     color: #0cbff1;
   }
-  .body .topboard_area .article .article .article_1_right .right-header {
+  .body .topboard_area .form-article .article .article-mobile .article_1_right .right-header {
     color: #f77;
     font-size: 17px;
   }
-  .body .topboard_area .article .article .article--body .item a {
+  .body .topboard_area .form-article .article .article-mobile .article--body .item a {
     font-size: 14px;
     color: #505050;
   }
-  .body .topboard_area .article .article .article--body .item a:hover {
+  .body .topboard_area .form-article .article .article-mobile .article--body .item a:hover {
     color: #09f;
   }
   .body .topboard_area .aside img {

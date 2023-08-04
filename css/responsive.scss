@@ -8,80 +8,91 @@ $main-color: #0cbff1;
     }
 }
 }
-
+@media (min-width: 768px){
+    .body{
+        .topboard_area{
+            .form-article{
+                .article{
+                    &-mobile{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (min-width: 992px){
         .header-mobile{
             display: none;
         }
     }
-    @media (max-width: 768px){
-        .body{
-            .banner{
-                margin-top: 15px;
-                &-left{
-                    padding: 0;
+@media (max-width: 768px){
+    .body{
+        .banner{
+            margin-top: 15px;
+            &-left{
+                padding: 0;
+            }
+            &-right{
+                display: none;
                 }
-                &-right{
-                    display: none;
-                    }
-                }
-            .popularlist{
-                h3{
-                    font-weight: 600;
-                    margin: 20px 0;
-                }
-                &-product{
-                        .popularlist-item{
-                            margin-top: 20px;
-                            .img{
-                                height: 160px;
-                                position: relative;
-                                .information{
-                                    padding: 0 10px 5px;
-                                    font-size: 18px;
-                                }
+            }
+        .popularlist{
+            h3{
+                font-weight: 600;
+                margin: 20px 0;
+            }
+            &-product{
+                    .popularlist-item{
+                        margin-top: 20px;
+                        .img{
+                            height: 160px;
+                            position: relative;
+                            .information{
+                                padding: 0 10px 5px;
+                                font-size: 18px;
                             }
-                            .content{
-                                .author{
-                                    margin: 8px 0;
-                                    color: #999;
-                                    font-size: 12px;
-                                }
-                                .name-product{
-                                    font-size: 13px;
-                                    a{
-                                        height: 42px;
-                                        -webkit-line-clamp: 2;
-                                        display: -webkit-box;
-                                        -webkit-box-orient: vertical;
-                                        overflow: hidden;
-                                    }
+                        }
+                        .content{
+                            .author{
+                                margin: 8px 0;
+                                color: #999;
+                                font-size: 12px;
+                            }
+                            .name-product{
+                                font-size: 13px;
+                                a{
+                                    height: 42px;
+                                    -webkit-line-clamp: 2;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
                                 }
                             }
                         }
+                    }
+            }
+            }
+        .topboard_area{
+            .form-article{
+                .article{
+                    &-desktop{
+                        display: none;
+                    }
                 }
-                }
-        }
-        .footer{
-            .footer-left{
-                margin-right: 10px;
-            }
-            .footer-center{
-                margin-right: 10px;
-            }
-            h3{
-                font-size: 16px;
-            }
-            p{
-                font-size: 13px;
             }
         }
-        .bottom_copyarea{
-            font-size: 12px;
-            padding: 20px 10px;
-            display: block;
-        }
+
     }
+    .footer{
+        display: none!important;
+    }
+    .bottom_copyarea{
+        font-size: 12px;
+        padding: 20px 10px;
+        display: block;
+    }
+}
 
 @media (max-width: 992px){
     .header-desktop{
@@ -99,10 +110,12 @@ $main-color: #0cbff1;
         }
         .topboard_area{
             margin-top: 20px;
-            .article{
+            .form-article{
                 .nav-tabs{
                     .nav-link{
-                        font-size: 15px;
+                        margin: 0 3px;
+                        padding: 5px;
+                        font-size: 12px;
                         font-weight: 400;
                         &.active{
                             border-bottom: 3px solid $main-color;
@@ -112,29 +125,31 @@ $main-color: #0cbff1;
                     }
                 }
                 .article{
-                    .article_1_left{
-                        border-right: 1px solid #ccc;
-                        .left--header{
-                            font-size: 17px;
-                            i{
-                                color: $main-color;
+                    .article-mobile{
+                        .article_1_left{
+                            border-right: 1px solid #ccc;
+                            .left--header{
+                                font-size: 17px;
+                                i{
+                                    color: $main-color;
+                                }
                             }
                         }
-                    }
-                    .article_1_right{
-                        .right-header{
-                            color: #f77;
-                            font-size: 17px;
+                        .article_1_right{
+                            .right-header{
+                                color: #f77;
+                                font-size: 17px;
+                            }
                         }
-                    }
-                    
-                    .article--body{
-                        .item{
-                            a{
-                                font-size: 14px;
-                                color: #505050;
-                                &:hover{
-                                    color: #09f;
+                        
+                        .article--body{
+                            .item{
+                                a{
+                                    font-size: 14px;
+                                    color: #505050;
+                                    &:hover{
+                                        color: #09f;
+                                    }
                                 }
                             }
                         }
