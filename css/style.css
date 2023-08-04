@@ -1,0 +1,192 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+.header-desktop {
+  border-bottom: 1px solid #eee;
+  padding-top: 30px;
+}
+.header-desktop .hd-desktop--left .logo {
+  width: 200px;
+}
+.header-desktop .hd-desktop--between .menu-item {
+  margin: 0 10px;
+}
+.header-desktop .hd-desktop--between .menu-item i {
+  font-size: 30px;
+  color: #0cbff1;
+}
+.header-desktop .hd-desktop--right i {
+  font-size: 30px;
+  color: #0cbff1;
+  margin-right: 10px;
+}
+.header-desktop .hd-desktop--right .form-local {
+  margin-right: 10px;
+  border: none;
+}
+.header-desktop .hd-desktop--right .form-local:focus-visible {
+  outline: none;
+}
+.header-desktop .hd-desktop--right .form-local option {
+  padding: 5px 10px;
+}
+
+.body .banner {
+  margin-top: 20px;
+}
+.body .banner img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.body .searcharea {
+  margin-top: 30px;
+}
+.body .searcharea .searchbox .input-group {
+  padding-bottom: 5px;
+  border-bottom: 3px solid black;
+}
+.body .searcharea .searchbox .input-group .form-outline {
+  width: 90%;
+}
+.body .searcharea .searchbox .input-group .form-outline .form-control {
+  width: 90%;
+  font-size: 20px;
+  border: none;
+}
+.body .searcharea .searchbox .input-group .form-outline .form-control:focus {
+  box-shadow: none;
+}
+.body .searcharea .searchbox .input-group .btn {
+  font-size: 25px;
+}
+.body .searcharea .searchbox .input-group .btn:focus {
+  box-shadow: none;
+}
+.body .searcharea .loginbox {
+  border-radius: 10px;
+  padding: 15px 0;
+  height: 100%;
+  border: 1px solid #eee;
+  font-size: 18px;
+}
+.body .searcharea .loginbox a {
+  color: #0cbff1;
+}
+.body .searcharea .loginbox a:hover {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+.body .topboard_area {
+  margin-top: 40px;
+}
+.body .topboard_area .article .nav-tabs .nav-link {
+  color: #aaa;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+}
+.body .topboard_area .article .nav-tabs .nav-link.active {
+  border-bottom: 5px solid #0cbff1;
+  color: black;
+  font-weight: 700;
+}
+.body .topboard_area .article .article {
+  color: #505050;
+  padding-top: 20px;
+}
+.body .topboard_area .article .article .article_1_left {
+  border-right: 1px solid #ccc;
+}
+.body .topboard_area .article .article .article_1_left .left--header {
+  font-size: 23px;
+}
+.body .topboard_area .article .article .article_1_left .left--header i {
+  color: #0cbff1;
+}
+.body .topboard_area .article .article .article_1_right .right-header {
+  color: #f77;
+  font-size: 23px;
+}
+.body .topboard_area .article .article .article--body .item {
+  margin: 20px 0;
+}
+.body .topboard_area .article .article .article--body .item .number {
+  color: #0cbff1;
+  font-size: 14px;
+  border-radius: 15px;
+  width: 46px;
+  margin-right: 15px;
+  border: 1px solid #0cbff1;
+  padding: 1px 10px;
+}
+.body .topboard_area .article .article .article--body .item a {
+  font-size: 19px;
+  color: #505050;
+}
+.body .topboard_area .article .article .article--body .item a:hover {
+  color: #09f;
+}
+.body .topboard_area .article .article .article--body .item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.body .topboard_area .aside img {
+  width: 100%;
+  border-radius: 10px;
+}
+.body .popularlist h3 {
+  font-weight: 900;
+  margin: 30px 0;
+}
+.body .popularlist-product .popularlist-item {
+  margin-top: 20px;
+}
+.body .popularlist-product .popularlist-item .img {
+  width: 285px;
+  height: 285px;
+  position: relative;
+}
+.body .popularlist-product .popularlist-item .img img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body .popularlist-product .popularlist-item .img .information {
+  font-weight: 600;
+  padding: 0 15px 10px;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  font-size: 22px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.body .popularlist-product .popularlist-item .content .author {
+  margin: 15px 0;
+  color: #999;
+  font-size: 16px;
+}
+.body .popularlist-product .popularlist-item .content .name-product {
+  font-size: 17px;
+}
+.body .popularlist-product .popularlist-item .content .name-product a {
+  height: 52px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */

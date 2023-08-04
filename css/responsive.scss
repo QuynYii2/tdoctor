@@ -1,0 +1,154 @@
+@media (min-width: 1700px) {
+    .container-fluid{
+        max-width: 1700px;
+    .container{
+        max-width: 1700px;
+    }
+}
+}
+
+
+@media (max-width: 992px){
+    $main-color: #0cbff1;
+    .header{
+        &-desktop{
+            padding-top: 10px;
+            .hd-desktop--left{
+                order: 1;
+                .logo{
+                    width: 100px;
+                }
+            }
+            .hd-desktop--between{
+                overflow-x: auto;
+                margin-top: 10px;
+                order: 3;
+                .menu-item{
+                    margin: 0 10px;
+                    i{
+                        font-size: 20px;
+                        color: #0cbff1;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .hd-desktop--right{
+                font-size: 13px;
+                order: 2;
+                i{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+    .body{
+        .banner{
+            margin-top: 15px;
+            &-right{
+                display: none;
+                }
+            }
+        .searcharea{
+            display: none;
+        }
+        .topboard_area{
+            margin-top: 20px;
+            .article{
+                .nav-tabs{
+                    .nav-link{
+                        font-size: 15px;
+                        font-weight: 400;
+                        &.active{
+                            border-bottom: 3px solid $main-color;
+                            color: black;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .article{
+                    .article_1_left{
+                        border-right: 1px solid #ccc;
+                        .left--header{
+                            font-size: 17px;
+                            i{
+                                color: $main-color;
+                            }
+                        }
+                    }
+                    .article_1_right{
+                        .right-header{
+                            color: #f77;
+                            font-size: 17px;
+                        }
+                    }
+                    
+                    .article--body{
+                        .item{
+                            a{
+                                font-size: 14px;
+                                color: #505050;
+                                &:hover{
+                                    color: #09f;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .aside{
+                img{
+                    margin-top: 10px;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .popularlist{
+           h3{
+            font-weight: 900;
+            margin: 30px 0;
+           }
+           &-product{
+                .popularlist-item{
+                    margin-top: 20px;
+                    .img{
+                        width: 160px;
+                        height: 160px;
+                        position: relative;
+                        .information{
+                            font-weight: 600;
+                            padding: 0 15px 10px;
+                            justify-content: space-between;
+                            color: white;
+                            position: absolute;
+                            font-size: 22px;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                    .content{
+                        .author{
+                            margin: 5px 0;
+                            color: #999;
+                            font-size: 13px;
+                        }
+                        .name-product{
+                            font-size: 14px;
+                            a{
+                                height: 44px;
+                                -webkit-line-clamp: 2;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+           }
+        }
+        }
+}
