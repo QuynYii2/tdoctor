@@ -46,8 +46,82 @@
                 </div>
             </div>
         </div>
-        <div class="header-mobile">
-
+        <div class="header-mobile row">
+            <div class="col-5 hd-desktop--left">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-7 hd-desktop--right d-flex justify-content-end">
+                <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href=""><i class="fa-regular fa-bell"></i></a>
+                <button onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="col-12 hd-desktop--between d-flex">
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-house-chimney-medical"></i><p>Booking Clinic</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-truck-medical"></i><p>Booking Homecare</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-phone-volume"></i><p>Telemedicine</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Medical Calculator</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-user-doctor"></i><p>Job Seeking</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-capsules"></i><p>Medicine Product</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>New medicine</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-briefcase-medical"></i><p>medical equipment</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i><p>Q&A</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-tag"></i><p>New Promotion</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Event</p></a></div>
+            </div>
+            <div class="nav_menu" id="demo">
+                <div class="nav_menu--header d-flex justify-content-between">
+                    <div onclick="closeMenu()" class="header-left">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="header-right">
+                        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                </div>
+                <div class="nav_menu--body">
+                    <div class="loginbox text-center">
+                        <a href="#">Log in now</a>
+                        <span> and connect to the worldwide Korean network > </span>
+                    </div>
+                    <div class="list-menu row">
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-house-chimney-medical"></i><p>Booking Clinic</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-truck-medical"></i><p>Booking Homecare</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-phone-volume"></i><p>Telemedicine</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Medical Calculator</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-user-doctor"></i><p>Job Seeking</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-capsules"></i><p>Medicine Product</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>New medicine</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-briefcase-medical"></i><p>medical equipment</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-headset"></i><p>Q&A</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-tag"></i><p>New Promotion</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Event</p></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_search" id="nav_search">
+                <div class="nav_search--header d-flex justify-content-between">
+                    <div onclick="closeSearch()" class="header-left">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="nav_search--body">
+                    <div class="searchbox">
+                        <div class="input-group">
+                            <div class="form-outline">
+                              <input type="search" id="form1" class="form-control" placeholder="Please enter a search term." />
+                            </div>
+                            <button type="button" class="btn">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <div class="body container">
@@ -513,6 +587,46 @@
             </div>
         </div>
     </div>
+    <hr>
+    <div class="footer container d-flex">
+        <div class="footer-left">
+            <h3>About HeyKorean</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Advertising inquiry</a></p>
+            <p><a href="#">Recruitment</a></p>
+        </div>
+        <div class="footer-center">
+            <h3>About HeyKorean</h3>
+            <p><a href="#">Job Seeking</a></p>
+            <p><a href="#">real estate</a></p>
+            <p><a href="#">buying and selling</a></p>
+            <p><a href="#">Ktown</a></p>
+            <p><a href="#">club</a></p>
+            <p><a href="#">community</a></p>
+            <p><a href="#">Mentoring</a></p>
+        </div>
+        <div class="footer-right">
+            <h3>Customer Center</h3>
+            <p><a href="#">contact us</a></p>
+            <p><a href="#">Terms of Use</a></p>
+            <p><a href="#">Privacy Statement</a></p>
+            <p><a href="#">Safe transaction rules</a></p>
+            <p><a href="#">DMCA Notice</a></p>
+            <p><a href="#">Accessibility</a></p>
+            
+        </div>
+    </div>
+    <div class="bottom_copyarea container d-flex justify-content-between">
+        <div> © 1998-2022, HeyKorean, Inc. All Rights Reserved. <i class="fa-regular fa-envelope"></i></div>
+        <div>
+            <i class="fa-solid fa-earth-asia"></i>
+            <select class="form-local" aria-label="Default select example">
+                <option value="1"><a href="#">Hoa Kỳ</a></option>
+                <option value="2"><a href="#">Việt Nam</a></option>
+            </select>
+        </div>
+    </div>
 </body>
+<script src="js/style.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>
