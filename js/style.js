@@ -26,6 +26,16 @@ function closeSearch() {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      768: {
+          slidesPerView: 7,
+          spaceBetween: 40,
+      },
+      1024: {
+          slidesPerView: 9,
+          spaceBetween: 50,
+      },
+  },
   navigation: {
   nextEl: ".swiper-button-next",
   prevEl: ".swiper-button-prev",

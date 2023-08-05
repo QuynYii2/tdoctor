@@ -51,6 +51,10 @@ a:hover {
 .header-mobile {
   padding-top: 10px;
 }
+.header-mobile--top {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d6d0d0;
+}
 .header-mobile .hd-desktop--left .logo {
   width: 100px;
 }
@@ -82,6 +86,7 @@ a:hover {
   margin-right: 10px;
 }
 .header-mobile .nav_menu {
+  z-index: 10;
   padding: 0;
   overflow-y: auto;
   padding-top: 15px;
@@ -124,6 +129,7 @@ a:hover {
   color: #0cbff1;
 }
 .header-mobile .nav_search {
+  z-index: 10;
   padding: 0;
   overflow-y: auto;
   padding-top: 15px;
@@ -165,6 +171,31 @@ a:hover {
 .header-mobile .nav_search--body .searchbox .input-group .btn:focus {
   box-shadow: none;
 }
+
+.swiper-button-next {
+  margin-right: -10px;
+  top: 15px;
+  border: 1px solid black;
+  --swiper-navigation-size: 13px;
+  color: #0cbff1;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.swiper-button-prev {
+  margin-left: -10px;
+  top: 15px;
+  border: 1px solid black;
+  --swiper-navigation-size: 13px;
+  color: #0cbff1;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
 
 .body {
   margin-top: 135px;

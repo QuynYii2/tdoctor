@@ -11,8 +11,6 @@ a{
         color: black;
     }
 }
-
-
 .header{
     background: white;
     position: fixed;
@@ -30,6 +28,7 @@ a{
             }
         }
         .hd-desktop--between{
+            margin: 0 20px;
             .menu-item{
                 margin: 0 10px;
                 i{
@@ -184,7 +183,6 @@ a{
                 }
             }
         }
-
     }
 }
 
@@ -404,18 +402,7 @@ a{
     transform: none!;
     transition-duration:none;
 }
-.swiper-button-next {
-    border: 3px solid #505050;
-    --swiper-navigation-size: 15px;
-    color: black;
-    font-weight: bold;
-    padding: 17px;
-    border-radius: 50%;
-    background-color: white;
-  }
-.swiper-button-prev{
-    --swiper-navigation-size: px;
-}
+
 
 .footer{
     justify-content: space-evenly;
