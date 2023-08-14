@@ -2,6 +2,30 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+.swiper-button-next {
+  margin-right: -10px;
+  top: 15px;
+  border: 1px solid black;
+  --swiper-navigation-size: 13px;
+  color: #0cbff1;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.swiper-button-prev {
+  margin-left: -10px;
+  top: 15px;
+  border: 1px solid black;
+  --swiper-navigation-size: 13px;
+  color: #0cbff1;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -223,6 +247,7 @@ a:hover {
 .body .topboard_area .form-article .nav-tabs {
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: clip;
 }
 .body .topboard_area .form-article .nav-tabs .nav-link {
   color: #aaa;
@@ -262,6 +287,7 @@ a:hover {
   margin-bottom: 15px;
   height: 60vh;
   overflow-y: auto;
+  overflow-x: clip;
 }
 .body .topboard_area .form-article .article .article_1_left {
   border-right: 1px solid #ccc;
@@ -273,7 +299,7 @@ a:hover {
   color: #0cbff1;
 }
 .body .topboard_area .form-article .article .article_1_right {
-  padding-left: 10px;
+  padding-left: 25px;
 }
 .body .topboard_area .form-article .article .article_1_right .right-header {
   color: #f77;
@@ -375,9 +401,10 @@ a:hover {
 }
 .body .topboard_area .form-article .article .list-medicine .item-medicine {
   background-color: #F1F8FF;
-  padding: 30px 0;
+  height: 160px;
   border-radius: 10px;
   margin: 10px 0;
+  padding: 10px;
 }
 .body .topboard_area .aside img {
   width: 100%;

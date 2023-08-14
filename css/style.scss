@@ -3,7 +3,29 @@
   }
 
   $main-color: #0cbff1;
+  .swiper-button-next {
+    margin-right: -10px;
+    top: 15px;
+    border: 1px solid black;
+    --swiper-navigation-size: 13px;
+    color: #0cbff1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
   
+  .swiper-button-prev {
+    margin-left: -10px;
+    top: 15px;
+    border: 1px solid black;
+    --swiper-navigation-size: 13px;
+    color: #0cbff1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
   a{
     cursor: pointer;
     text-decoration: none;
@@ -245,6 +267,7 @@
         .nav-tabs{
           flex-wrap: nowrap;
           overflow-x: auto;
+          overflow-y: clip;
           .nav-link{
             color: #aaa;
             border: none;
@@ -286,6 +309,7 @@
           margin-bottom: 15px;
           height: 60vh;
           overflow-y: auto ;
+          overflow-x: clip;
           .article_1_left{
             border-right: 1px solid #ccc;
             .left--header{
@@ -296,7 +320,7 @@
             }
           }
           .article_1_right{
-            padding-left: 10px;
+            padding-left: 25px;
             .right-header{
               color: #f77;
               font-size: 23px;
@@ -401,9 +425,10 @@
             text-align: center; 
             .item-medicine{
                 background-color: #F1F8FF;
-                padding: 30px 0;
+                height: 160px;
                 border-radius: 10px;
                 margin: 10px 0;
+                padding: 10px;
             }
           }
         }

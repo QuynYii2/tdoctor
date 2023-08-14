@@ -56,109 +56,11 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  .body .topboard_area .form-article .article-mobile {
+    display: block;
+  }
   .body .topboard_area .form-article .article-desktop-responsive {
     display: none;
-  }
-  .body .topboard_area .form-article .article {
-    color: #505050;
-    padding-top: 20px;
-    margin-bottom: 15px;
-    height: 60vh;
-    overflow-y: auto;
-  }
-  .body .topboard_area .form-article .article .article_1_left .left--header {
-    font-size: 18px;
-  }
-  .body .topboard_area .form-article .article .article_1_right {
-    padding-left: 10px;
-  }
-  .body .topboard_area .form-article .article .article_1_right .right-header {
-    font-size: 18px;
-  }
-  .body .topboard_area .form-article .article .article-header {
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .body .topboard_area .form-article .article .article--body .item {
-    margin: 10px 0;
-  }
-  .body .topboard_area .form-article .article .article--body .item .icon {
-    margin-right: 10px;
-    position: relative;
-  }
-  .body .topboard_area .form-article .article .article--body .item .icon .number-icon {
-    left: 30%;
-    font-size: 15px;
-  }
-  .body .topboard_area .form-article .article .article--body .item .number {
-    color: #0cbff1;
-    font-size: 14px;
-    border-radius: 15px;
-    width: 46px;
-    margin-right: 15px;
-    border: 1px solid #0cbff1;
-    padding: 1px 10px;
-  }
-  .body .topboard_area .form-article .article .article--body .item a {
-    font-size: 15px;
-  }
-  .body .topboard_area .form-article .article .article--body .item i {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  .body .topboard_area .form-article .article .list-doctor {
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-  }
-  .body .topboard_area .form-article .article .list-doctor img {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .doctor-name {
-    font-weight: 600;
-    font-size: 16px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor {
-    padding-left: 15px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor .name a {
-    color: #0cbff1;
-    font-weight: 700;
-    margin-bottom: 5px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor .address {
-    font-size: 16px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor .work {
-    font-size: 14px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor .chat {
-    margin: 5px 0;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor .chat a {
-    font-size: 13px;
-    font-weight: 600;
-    padding: 2px 10px;
-    border-radius: 15px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor .time {
-    font-size: 14px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .content-doctor .time b {
-    margin-left: 15px;
-  }
-  .body .topboard_area .form-article .article .list-doctor .desc {
-    padding-left: 15px;
-    font-size: 14px;
-  }
-  .body .topboard_area .form-article .article .list-medicine {
-    text-align: center;
-  }
-  .body .topboard_area .form-article .article .list-medicine .item-medicine {
-    padding: 30px 0;
-    border-radius: 10px;
-    margin: 10px 0;
   }
   .footer {
     display: none !important;
@@ -220,5 +122,87 @@
     margin-top: 10px;
     width: 100%;
     border-radius: 10px;
+  }
+  .body .topboard_area .form-article .article {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    height: 30vh;
+    overflow-y: auto;
+  }
+  .body .topboard_area .form-article .article .article_1_left .left--header {
+    font-size: 18px;
+  }
+  .body .topboard_area .form-article .article .article_1_right {
+    padding-left: 10px;
+  }
+  .body .topboard_area .form-article .article .article_1_right .right-header {
+    font-size: 18px;
+  }
+  .body .topboard_area .form-article .article .article-header {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .body .topboard_area .form-article .article .article--body .item {
+    margin: 10px 0;
+  }
+  .body .topboard_area .form-article .article .article--body .item .icon {
+    margin-right: 10px;
+    position: relative;
+  }
+  .body .topboard_area .form-article .article .article--body .item .icon .number-icon {
+    left: 30%;
+    font-size: 15px;
+  }
+  .body .topboard_area .form-article .article .article--body .item .number {
+    font-size: 14px;
+    margin-right: 15px;
+    padding: 1px 10px;
+  }
+  .body .topboard_area .form-article .article .article--body .item a {
+    font-size: 14px;
+  }
+  .body .topboard_area .form-article .article .article--body .item i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .body .topboard_area .form-article .article .list-doctor {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  .body .topboard_area .form-article .article .list-doctor .doctor-name {
+    font-size: 12px;
+  }
+  .body .topboard_area .form-article .article .list-doctor .content-doctor {
+    padding-left: 15px;
+  }
+  .body .topboard_area .form-article .article .list-doctor .content-doctor .name a {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .body .topboard_area .form-article .article .list-doctor .content-doctor .address {
+    display: none;
+  }
+  .body .topboard_area .form-article .article .list-doctor .content-doctor .work {
+    display: none;
+  }
+  .body .topboard_area .form-article .article .list-doctor .content-doctor .chat {
+    display: none;
+  }
+  .body .topboard_area .form-article .article .list-doctor .content-doctor .time {
+    font-size: 14px;
+  }
+  .body .topboard_area .form-article .article .list-doctor .content-doctor .time b {
+    margin-left: 15px;
+  }
+  .body .topboard_area .form-article .article .list-doctor .desc {
+    display: none;
+  }
+  .body .topboard_area .form-article .article .list-medicine {
+    text-align: center;
+  }
+  .body .topboard_area .form-article .article .list-medicine .item-medicine {
+    border-radius: 10px;
+    margin: 10px 0;
   }
 }/*# sourceMappingURL=responsive.css.map */

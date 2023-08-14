@@ -76,126 +76,14 @@ $main-color: #0cbff1;
         .topboard_area{
             .form-article{
                 .article{
+                    &-mobile{
+                        display: block;
+                    }
                     &-desktop-responsive{
                         display: none;
                     }
                 }
             }
-        }
-        .topboard_area{
-            .form-article{
-                .article{
-                    color: #505050;
-                    padding-top: 20px;
-                    margin-bottom: 15px;
-                    height: 60vh;
-                    overflow-y: auto ;
-                    .article_1_left{
-                      .left--header{
-                        font-size: 18px;
-                      }
-                    }
-                    .article_1_right{
-                      padding-left: 10px;
-                      .right-header{
-                        font-size: 18px;
-                      }
-                    }
-                    .article-header{
-                      font-size: 17px;
-                      font-weight: 500;
-                      margin-bottom: 20px;
-                    }
-                    .article--body{
-                      .item{
-                        margin: 10px 0;
-                        .icon{
-                          margin-right: 10px;
-                          position: relative;
-                          .number-icon{
-                            left: 30%;
-                            font-size: 15px;
-                          }
-                        }
-                        .number{
-                          color: $main-color;
-                          font-size: 14px;
-                          border-radius: 15px;
-                          width: 46px;
-                          margin-right: 15px;
-                          border: 1px solid $main-color;
-                          padding: 1px 10px;
-                        }
-                        a{
-                          font-size: 15px;
-                          &:hover{
-                          }
-                        }
-                        i{
-                          font-size: 20px;
-                          margin-right: 10px;
-                        }
-                      }
-                    }
-                    .list-doctor{
-                      padding-bottom: 5px;
-                      margin-bottom: 20px;
-                      img{
-                          width: 100%;
-                          margin-bottom: 5px;
-                        }
-                        .doctor-name{
-                          font-weight: 600;
-                          font-size: 16px;
-                        }
-                        .content-doctor{
-                          padding-left: 15px;
-                          .name{
-                              a{
-                                  color: $main-color;
-                                  font-weight: 700;
-                                  margin-bottom: 5px;
-                              }
-                          }
-                          .address{
-                              font-size: 16px;
-                          }
-                          .work{
-                              font-size: 14px;
-                          }
-                          .chat{
-                              margin: 5px 0;
-                              a{
-                                  font-size: 13px;
-                                  font-weight: 600;
-                                  padding: 2px 10px;
-                                  border-radius: 15px;
-                              }
-                          }
-                          .time{
-                              font-size: 14px;
-                              b{
-                                  margin-left: 15px;
-                              }
-                          }
-                        }
-                        .desc{
-                          padding-left: 15px;
-                          font-size: 14px;
-                        }
-                    }
-                    .list-medicine{
-                      text-align: center; 
-                      .item-medicine{
-                          padding: 30px 0;
-                          border-radius: 10px;
-                          margin: 10px 0;
-                      }
-                    }
-                  }
-
-            }
-
         }
 
     }
@@ -278,6 +166,100 @@ $main-color: #0cbff1;
                     border-radius: 10px;
                 }
             }
+        }
+        .topboard_area{
+            .form-article{
+                .article{
+                    padding-top: 20px;
+                    margin-bottom: 15px;
+                    height: 30vh;
+                    overflow-y: auto ;
+                    .article_1_left{
+                      .left--header{
+                        font-size: 18px;
+                      }
+                    }
+                    .article_1_right{
+                      padding-left: 10px;
+                      .right-header{
+                        font-size: 18px;
+                      }
+                    }
+                    .article-header{
+                      font-size: 14px;
+                      font-weight: 500;
+                      margin-bottom: 20px;
+                    }
+                    .article--body{
+                      .item{
+                        margin: 10px 0;
+                        .icon{
+                          margin-right: 10px;
+                          position: relative;
+                          .number-icon{
+                            left: 30%;
+                            font-size: 15px;
+                          }
+                        }
+                        .number{
+                          font-size: 14px;
+                          margin-right: 15px;
+                          padding: 1px 10px;
+                        }
+                        a{
+                          font-size: 14px;
+                        }
+                        i{
+                          font-size: 20px;
+                          margin-right: 10px;
+                        }
+                      }
+                    }
+                    .list-doctor{
+                      padding-bottom: 5px;
+                      margin-bottom: 20px;
+                        .doctor-name{
+                          font-size: 12px;
+                        }
+                        .content-doctor{
+                          padding-left: 15px;
+                          .name{
+                              a{
+                                  margin-bottom: 5px;
+                                  font-size: 14px;
+                              }
+                          }
+                          .address{
+                            display: none;
+                          }
+                          .work{
+                            display: none;
+                          }
+                          .chat{
+                            display: none;
+                          }
+                          .time{
+                              font-size: 14px;
+                              b{
+                                  margin-left: 15px;
+                              }
+                          }
+                        }
+                        .desc{
+                          display: none;
+                        }
+                    }
+                    .list-medicine{
+                      text-align: center; 
+                      .item-medicine{
+                          border-radius: 10px;
+                          margin: 10px 0;
+                      }
+                    }
+                  }
+
+            }
+
         }
       
     }
