@@ -26,36 +26,6 @@
   .body .banner-right {
     display: none;
   }
-  .body .popularlist h3 {
-    font-weight: 600;
-    margin: 20px 0;
-  }
-  .body .popularlist-product .popularlist-item {
-    margin-top: 20px;
-  }
-  .body .popularlist-product .popularlist-item .img {
-    height: 160px;
-    position: relative;
-  }
-  .body .popularlist-product .popularlist-item .img .information {
-    padding: 0 10px 5px;
-    font-size: 18px;
-  }
-  .body .popularlist-product .popularlist-item .content .author {
-    margin: 8px 0;
-    color: #999;
-    font-size: 12px;
-  }
-  .body .popularlist-product .popularlist-item .content .name-product {
-    font-size: 13px;
-  }
-  .body .popularlist-product .popularlist-item .content .name-product a {
-    height: 42px;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
   .body .topboard_area .form-article .article-mobile {
     display: block;
   }

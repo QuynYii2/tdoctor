@@ -333,6 +333,7 @@
           }
           .article--body{
             .item{
+              display: flex;
               margin: 20px 0;
               .icon{
                 margin-right: 10px;
@@ -346,13 +347,14 @@
                 }
               }
               .number{
-                color: $main-color;
+                color: #0cbff1;
                 font-size: 14px;
                 border-radius: 15px;
                 width: 46px;
                 margin-right: 15px;
-                border: 1px solid $main-color;
-                padding: 1px 10px;
+                border: 1px solid #0cbff1;
+                text-align: center;
+                line-height: 25px;
               }
               a{
                 font-size: 19px;
@@ -440,60 +442,87 @@
         }
       }
     }
-    .popularlist{
-      h3{
-        font-weight: 900;
-        margin: 30px 0;
-      }
-      &-product{
-        .popularlist-item{
+    .answer-doctor{
+      margin-top: 40px;
+      .mentoring{
+        .mentoring-list{  
+          height: 50vh;
+          overflow-y: auto;
+          overflow-x: clip;
+          border: 1px solid #ccc;
+          padding: 10px;
           margin-top: 20px;
-          .img{
-            height: 285px;
-            position: relative;
-            img{
-              border-radius: 10px;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-            .information{
-              font-weight: 600;
-              padding: 0 15px 10px;
-              justify-content: space-between;
-              color: white;
-              position: absolute;
-              font-size: 22px;
-              bottom: 0;
-              left: 0;
-              right: 0;
-            }
-          }
-          .content{
-            .author{
-              margin: 15px 0;
-              color: #999;
-              font-size: 16px;
-            }
-            .name-product{
-              font-size: 17px;
-              a{
-                height: 52px;
-                -webkit-line-clamp: 2;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+          .mentoring-item{
+            margin-top: 20px;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+              .mentoring-number{
+                color: $main-color;
+                width: 60px;
+                border: 1px solid $main-color;
+                border-radius: 20px;
+                height: 30px;
+                text-align: center;
+                margin-right: 10px;
               }
-            }
+              .mentoring-content{
+                span{
+                  font-size: 12px;
+                  border-right: 1px solid #f5f5f5;
+                  padding: 0 8px;
+                  color: #999;
+                  font-weight: 600;
+                }
+              }
           }
         }
       }
+      .news{
+        .news-list{
+          height: 50vh  ;
+          overflow-y: auto;
+          overflow-x: clip;
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-top: 20px;
+          .news-item{
+            margin-top: 20px;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+              .news-img{
+                img{
+                  width: 100%;
+                }
+              }
+              .news-content{ 
+                .content{
+                    height: 45px;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-size: 15px;
+                    margin-bottom: 8px;
+                }
+                .time{
+                  .cate{
+                    font-size: 15px;
+                    margin-left: 20px;
+                    color: red;
+                  }
+                }
+              }
+      }
+
     }
   }
+}
   hr{
     margin: 50px 0;
   }
-  
+}
   .footer{
     justify-content: space-evenly;
   }
@@ -509,4 +538,23 @@
       }
     }
   }
-  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

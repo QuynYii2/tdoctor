@@ -41,3 +41,4 @@ function closeSearch() {
   prevEl: ".swiper-button-prev",
 },
 });
+
