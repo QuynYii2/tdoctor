@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Nunito+Sans:wght@400;500&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500&family=Roboto:wght@500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="header-desktop align-items-center row">
+            <div class="col-md-2 col-5 hd-desktop--left text-center">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-7 col-12 hd-desktop--between d-flex justify-content-center">
+                <div class="menu-item text-center"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Medical Calculator</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-user-doctor"></i><p>Job Seeking</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>New medicine</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i><p>Q&A</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-tag"></i><p>New Promotion</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Event</p></a></div>
+            </div>
+            <div class="col-md-3 col-7 hd-desktop--right d-flex justify-content-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <select class="form-local" aria-label="Default select example">
+                    <option value="1"><a href="#">Hoa Kỳ</a></option>
+                    <option value="2"><a href="#">Việt Nam</a></option>
+                </select>
+                <div class="form-login">
+                    <a href="#"><i class="fa-solid fa-user"></i> Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile row">
+            <div class="row header-mobile--top">
+                <div class="col-5 hd-desktop--left">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-7 hd-desktop--right d-flex justify-content-end">
+                    <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href=""><i class="fa-regular fa-bell"></i></a>
+                    <button onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="col-12 hd-desktop--between">
+                <div class="swiper mySwiper" id="mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Medical Calculator</p></a></div>
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-user-doctor"></i><p>Job Seeking</p></a></div>
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>New medicine</p></a></div>
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i><p>Q&A</p></a></div>
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-tag"></i><p>New Promotion</p></a></div>
+                      <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Event</p></a></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="nav_menu" id="demo">
+                <div class="nav_menu--header d-flex justify-content-between">
+                    <div onclick="closeMenu()" class="header-left">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="header-right">
+                        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                </div>
+                <div class="nav_menu--body">
+                    <div class="loginbox text-center">
+                        <a href="#">Log in now</a>
+                        <span> and connect to the worldwide Korean network > </span>
+                    </div>
+                    <div class="list-menu row">
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Medical Calculator</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-user-doctor"></i><p>Job Seeking</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>New medicine</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-headset"></i><p>Q&A</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-tag"></i><p>New Promotion</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Event</p></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_search" id="nav_search">
+                <div class="nav_search--header d-flex justify-content-between">
+                    <div onclick="closeSearch()" class="header-left">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="nav_search--body">
+                    <div class="searchbox">
+                        <div class="input-group">
+                            <div class="form-outline">
+                              <input type="search" id="form1" class="form-control" placeholder="Please enter a search term." />
+                            </div>
+                            <button type="button" class="btn">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body container">
+        <div class="mentor-detail row">
+            <div class="col-md-9 row">
+                <h4>Best Mentoring</h4>
+                <div class="row mentor-left">
+                    <div class="col-6">
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">1 </span> 
+                            <span class="col-md-9 text"> Prices have risen too much</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">2 </span> 
+                            <span class="col-md-9 text"> Incident at Palpak Some Karaoke</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">3 </span> 
+                            <span class="col-md-9 text"> Why is there so much truth in Flushing??</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">4 </span> 
+                            <span class="col-md-9 text"> homeowner's mischief. </span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">5 </span> 
+                            <span class="col-md-9 text"> unilateral termination of the contract. </span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">6 </span> 
+                            <span class="col-md-9 text"> I don't understand the tip</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">7 </span> 
+                            <span class="col-md-9 text"> I'm a man in my mid-30's, is pure dating impossible?</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">8 </span> 
+                            <span class="col-md-9 text"> If you write a comment on mentoring, it will be deleted. Why is that?</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">9 </span> 
+                            <span class="col-md-9 text"> Bayside BCD Soft Tofu Closure</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                        <div class="row mentor-left--item">
+                            <span class="number col-md-1">10 </span> 
+                            <span class="col-md-9 text"> I clicked scam in my email (please help)</span>
+                            <span class="total col-md-2">(12175)</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Recommended ranking</h5>
+                <div class="row mentor-right">
+                    <div class="col-6">
+                        <div class="mentor-left--item">
+                            <span class="number">1 </span> 
+                            <span> hyper</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">2 </span> 
+                            <span> blue mirage</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">3 </span> 
+                            <span> sway</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">4 </span> 
+                            <span> Happy001</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">5 </span> 
+                            <span> asteriscus</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mentor-left--item">
+                            <span class="number">6 </span> 
+                            <span> Mugwort</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">7 </span> 
+                            <span> steve1998</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">8 </span> 
+                            <span> fat</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">9 </span> 
+                            <span> young gun</span>
+                        </div>
+                        <div class="mentor-left--item">
+                            <span class="number">10 </span> 
+                            <span> younger brother</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listContainer row">
+            <div class="containerTitle">
+                <div class="col-md-9">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                          <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">   <div class="mentoring-list">
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mentoring-item d-flex">
+                                <div class="mentoring-number">
+                                    <i class="fa-solid fa-droplet"></i> 10 
+                                </div>
+                                <div class="mentoring-content">
+                                    <a href="#">I was sued after reviewing an immigration lawyer on the Internet.</a>
+                                    <div>
+                                        <span>Answers 65 </span>
+                                        <span>Comments 18 </span>
+                                        <span>Views 16,567 </span>
+                                        <span>16-04-13 </span>
+                                        <span>Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer container d-flex">
+        <div class="footer-left">
+            <h3>About HeyKorean</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Advertising inquiry</a></p>
+            <p><a href="#">Recruitment</a></p>
+        </div>
+        <div class="footer-center">
+            <h3>About HeyKorean</h3>
+            <p><a href="#">Job Seeking</a></p>
+            <p><a href="#">real estate</a></p>
+            <p><a href="#">buying and selling</a></p>
+            <p><a href="#">Ktown</a></p>
+            <p><a href="#">club</a></p>
+            <p><a href="#">community</a></p>
+            <p><a href="#">Mentoring</a></p>
+        </div>
+        <div class="footer-right">
+            <h3>Customer Center</h3>
+            <p><a href="#">contact us</a></p>
+            <p><a href="#">Terms of Use</a></p>
+            <p><a href="#">Privacy Statement</a></p>
+            <p><a href="#">Safe transaction rules</a></p>
+            <p><a href="#">DMCA Notice</a></p>
+            <p><a href="#">Accessibility</a></p>
+            
+        </div>
+    </div>
+    <div class="bottom_copyarea container d-flex justify-content-between">
+        <div class="bottom_copyarea--left"> © 1998-2022, HeyKorean, Inc. All Rights Reserved. <i class="fa-regular fa-envelope"></i></div>
+        <div class="bottom_copyarea--right">
+            <i class="fa-solid fa-earth-asia"></i>
+            <select class="form-local" aria-label="Default select example">
+                <option value="1"><a href="#">Hoa Kỳ</a></option>
+                <option value="2"><a href="#">Việt Nam</a></option>
+            </select>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js" integrity="sha512-4Ooh3fl4STrmn95ZbS/J6l8csp/FvSKPaeDAH/IaPQGJIx9lmpuxXZTCYKR2W5+Bt7i74exPvAT2PsWnac+sow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
