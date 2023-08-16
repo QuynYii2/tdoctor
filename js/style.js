@@ -42,5 +42,28 @@ function closeSearch() {
 },
 });
 
-
-
+new Swiper(".listProduct", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  cssMode: true,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+      300: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+      },
+      1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+      },
+      1500: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+      },
+  },
+  mousewheel: true,
+  keyboard: true,
+});

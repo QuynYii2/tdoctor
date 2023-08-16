@@ -42,6 +42,28 @@
   }
 }
 @media (max-width: 992px) {
+  .swiper-button-next {
+    margin-right: -10px;
+    top: 15px;
+    border: 1px solid black;
+    --swiper-navigation-size: 13px;
+    color: #0cbff1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .swiper-button-prev {
+    margin-left: -10px;
+    top: 15px;
+    border: 1px solid black;
+    --swiper-navigation-size: 13px;
+    color: #0cbff1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
   .header-desktop {
     display: none;
   }
@@ -175,6 +197,4 @@
     border-radius: 10px;
     margin: 10px 0;
   }
-}
-
-/*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */
