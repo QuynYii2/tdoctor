@@ -48,7 +48,7 @@ a:hover {
   width: 200px;
 }
 .header-desktop .hd-desktop--between .menu-item {
-  margin: 0 10px;
+  margin: 0 25px;
 }
 .header-desktop .hd-desktop--between .menu-item i {
   font-size: 30px;
@@ -160,6 +160,7 @@ a:hover {
 }
 .header-mobile .nav_search.active {
   right: 0;
+  z-index: 2;
 }
 .header-mobile .nav_search--header {
   padding: 15px 10px;
@@ -408,7 +409,8 @@ a {
   color: #0cbff1;
 }
 .body .searcharea .loginbox a:hover {
-  text-decoration: revert;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
 }
 .body .topboard_area {
   margin-top: 40px;
@@ -584,6 +586,9 @@ a {
 .body .answer-doctor {
   margin-top: 40px;
 }
+.body .answer-doctor h3 {
+  margin-bottom: 10px;
+}
 .body .answer-doctor .mentoring .mentoring-list {
   height: 50vh;
   overflow-y: auto;
@@ -598,6 +603,8 @@ a {
   padding-bottom: 10px;
 }
 .body .answer-doctor .mentoring .mentoring-list .mentoring-item .mentoring-number {
+  display: flex;
+  align-items: center;
   color: #0cbff1;
   width: 60px;
   border: 1px solid #0cbff1;
@@ -656,6 +663,7 @@ a {
 .body .mentor-detail .mentor-left {
   padding-top: 20px;
   border-top: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 .body .mentor-detail .mentor-left--item {
   margin: 3px 0;
@@ -684,21 +692,18 @@ a {
 .body .listContainer {
   margin-top: 40px;
 }
-.body .listContainer .mentoring-list {
-  height: 50vh;
-  overflow-y: auto;
-  overflow-x: clip;
+.body .listContainer .containerTitle .mentoring-list {
   border: 1px solid #ccc;
   padding: 10px;
   margin-top: 20px;
 }
-.body .listContainer .mentoring-list .mentoring-item {
+.body .listContainer .containerTitle .mentoring-list .mentoring-item {
   margin-top: 20px;
   align-items: center;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
-.body .listContainer .mentoring-list .mentoring-item .mentoring-number {
+.body .listContainer .containerTitle .mentoring-list .mentoring-item .mentoring-number {
   color: #0cbff1;
   width: 60px;
   border: 1px solid #0cbff1;
@@ -707,12 +712,31 @@ a {
   text-align: center;
   margin-right: 10px;
 }
-.body .listContainer .mentoring-list .mentoring-item .mentoring-content span {
+.body .listContainer .containerTitle .mentoring-list .mentoring-item .mentoring-content span {
   font-size: 12px;
   border-right: 1px solid #f5f5f5;
   padding: 0 8px;
   color: #999;
   font-weight: 600;
+}
+.body .listContainer .bestMentoringWrap {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  background: #fafafa;
+  margin-bottom: 20px;
+}
+.body .listContainer .bestMentoringWrap .bestMentoringTitle {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.body .listContainer .bestMentoringWrap .bestMentoringContent {
+  padding-top: 10px;
+}
+.body .listContainer .bestMentoringWrap .bestMentoringContent a {
+  color: #666666;
+  font-size: 14px;
+  line-height: 28px;
 }
 .body .subContent {
   margin-top: 30px;
@@ -734,6 +758,7 @@ a {
   border-radius: 20px;
   background: white;
   padding: 5px 30px;
+  border: 1px solid #000;
 }
 .body .products .section .button-see-more button:hover {
   background-color: #0cbff1;
@@ -754,7 +779,8 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .body .products .section .item {
   padding: 5px;
@@ -769,7 +795,8 @@ a {
 .body .products .section .item-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .body .products .section .item-img .button-view {
   display: none;
@@ -895,7 +922,8 @@ a {
 .body .products .section-left img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .body .products .section .brand-item {
   margin: 8px 0;
@@ -943,8 +971,7 @@ a {
   margin-top: 40px;
 }
 .body .address-tdoctor .map-address .system {
-  height: 60vh;
-  overflow-y: auto;
+  margin-bottom: 30px;
   padding: 0;
   border: 1px solid gray;
   border-radius: 10px;
@@ -958,6 +985,8 @@ a {
   background-color: #0cbff1;
 }
 .body .address-tdoctor .map-address .system .system-body {
+  height: 55vh;
+  overflow-y: auto;
   background-color: #fafafa;
 }
 .body .address-tdoctor .map-address .system .system-body .system-bodyitem {
@@ -1018,7 +1047,8 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .view_right_container .product_etc > div strong {
@@ -1249,7 +1279,8 @@ div.info_top_bx:nth-child(1) > span:nth-child(5) {
   overflow: hidden;
 }
 .item_img_wrap > img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -1594,7 +1625,6 @@ div.info_top_bx:nth-child(1) > span:nth-child(5) {
   font-weight: 400;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 .checkbox input {
@@ -2043,11 +2073,6 @@ button {
   z-index: 1;
 }
 
-[class*=button] {
-  border-radius: var(--border-radius-s);
-  min-height: 48px;
-}
-
 .swiper-button-next {
   border-radius: 3px;
 }
@@ -2264,6 +2289,4 @@ li {
 .num_right {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ6SURBVHgB7ZpLjtpAEIbLxjyWHMFskFiFOUKOkBNMkFiAWIQ5QTwnyMwCIR4SmRMwOUG4QWaHxAbfIF7zzF/ERJ1GGo1ElcEjfxKiVV5QP65X2+0QWC6X/nq9nmBZx6dMV47jOM+e591VKpXQiZ3/RSlw3CLK5/M33mq1eoCi8n6/fyoUCl2oiuiKmc/nvuu6AXy+5ahxFovFni9st9tKrVYLKQUgaspw/jeWkXs0psV5xoiSskspJxNwaTIBl8YjIcbj8S1K8QOWUS6XC5rN5hMlgNgdgPMB/e3mPgsZDod1SgDJEDJHEe7s036/75MyYgJ2u92dZfIRStPJZKI6Y4kJaLfb3yHi3rThLtTR8r+RIqJVCCICiPgveSHi82g0+kpKiJfRUqnUxaT4YtogKuAqRQqIC2g0GhGq0CcsQ9OuVZlUGhlCKdxsNizC3FuoVCa1TtzpdF6SqEyqo0QSlUl9FtKuTIkMc5qVKREBr1UmOpNsP/DmH3LdZ3z5pg1h9EhnkoiAwWDAVeeDaUMiP3KC05moC0D3/YKvrmUOi8ViQAKoCuj1enX803aihgidj5zYJIDYltKGRwbE/dS2w/kGjxokhNodgPM/6TRp7+H8jARRERAnrW/apJLWRlxAPCKcJG2r1eqSAqICOGl5RLDMh6QlJcQEcNLirclJ0vK+QDJpbcQEYFjjEPFNGyct7wtIEbUqpJW0NmIC4oYV8hp3Y6aVtDb/XjFVq1WHUsTR72ycvjSZgEvzLgQc5nJ+eUwpgY9HHNcs4NAp+WGTeeFaid/SH54poff8cPjsAR73pfKwBx7L3Lh8xIAXfISF0gGH/Ix9Zt//ABciRG2OkBxjAAAAAElFTkSuQmCC) no-repeat 50%;
   background-size: 35px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

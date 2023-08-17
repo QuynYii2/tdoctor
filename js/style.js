@@ -19,7 +19,7 @@ function closeSearch() {
   }
 
 
-  var swiper = new Swiper("#mySwiper", { 
+  var swiper = new Swiper(".mySwiper", { 
     slidesPerView: 5,
     spaceBetween: 10,
     pagination: {
@@ -27,7 +27,7 @@ function closeSearch() {
       clickable: true,
     },
     breakpoints: {
-      768: {
+      600: {
           slidesPerView: 7,
           spaceBetween: 40,
       },
@@ -55,6 +55,10 @@ new Swiper(".listProduct", {
           slidesPerView: 2,
           spaceBetween: 10,
       },
+      700: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
       1024: {
           slidesPerView: 3,
           spaceBetween: 30,
@@ -63,6 +67,17 @@ new Swiper(".listProduct", {
           slidesPerView: 3,
           spaceBetween: 30,
       },
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
+new Swiper(".mySwiper-banner", {
+  slidesPerView: 1,
+  cssMode: true,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
   },
   mousewheel: true,
   keyboard: true,

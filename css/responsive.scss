@@ -49,6 +49,118 @@ $main-color: #0cbff1;
                 }
             }
         }
+        .answer-doctor{
+          margin-top: 40px;
+          .mentoring{
+            margin-bottom: 20px;
+            .mentoring-list{  
+              height: 50vh;
+              padding: 10px;
+              .mentoring-item{
+                margin-top: 20px;
+                padding-bottom: 10px;
+                  .mentoring-number{
+                    width: 80px;
+                    border-radius: 20px;
+                    height: 30px;
+                    margin-right: 10px;
+                  }
+                  .mentoring-content{
+                    a{
+                        font-size: 16px;
+                    }
+                    span{
+                      font-size: 11px;
+                      padding: 0 8px;
+                      font-weight: 500;
+                    }
+                  }
+              }
+            }
+          }
+          .news{
+            .news-list{
+              height: 50vh  ;
+              overflow-y: auto;
+              overflow-x: clip;
+              padding: 10px;
+              .news-item{
+                margin-top: 20px;
+                align-items: center;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 10px;
+                  .news-img{
+                    img{
+                      width: 100%;
+                    }
+                  }
+                  .news-content{ 
+                    h4{
+                      font-size: 16px;
+                    }
+                    .content{
+                        height: 40px;
+                        -webkit-line-clamp: 2;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        font-size: 13px;
+                        margin-bottom: 8px;
+                    }
+                    .time{
+                        font-size: 13px;
+                      .cate{
+                        font-size: 13px;
+                        margin-left: 20px;
+                      }
+                    }
+                  }
+          }
+    
+        }
+      }
+        }
+        .listContainer{
+          margin-top: 40px;
+          .containerTitle{
+            .mentoring-list{
+              padding: 10px;
+              margin-top: 20px;
+              .mentoring-item{
+                margin-top: 10px;
+                align-items: center;
+                padding-bottom: 10px;
+                  .mentoring-number{
+                    width: 80px;
+                    height: 30px;
+                  }
+                  .mentoring-content{
+                    font-size: 14px;
+                    span{
+                      font-size: 11px;
+                      padding: 0 8px;
+                      font-weight: 500;
+                    }
+                  }
+              }
+            }
+    
+          }
+          .bestMentoringWrap{
+            padding: 10px;
+            margin-bottom: 20px;
+            .bestMentoringTitle{
+              padding-bottom: 10px;
+            }
+            .bestMentoringContent{
+              padding-top: 10px;
+              a{
+                font-size: 14px;
+                line-height: 28px;
+              }
+            }
+          }
+        }
 
     }
     .footer{
@@ -65,7 +177,6 @@ $main-color: #0cbff1;
     
   .swiper-button-next {
     margin-right: -10px;
-    top: 15px;
     border: 1px solid black;
     --swiper-navigation-size: 13px;
     color: #0cbff1;
@@ -77,7 +188,6 @@ $main-color: #0cbff1;
   
   .swiper-button-prev {
     margin-left: -10px;
-    top: 15px;
     border: 1px solid black;
     --swiper-navigation-size: 13px;
     color: #0cbff1;
@@ -227,9 +337,9 @@ $main-color: #0cbff1;
                             display: none;
                           }
                           .time{
-                              font-size: 14px;
+                              font-size: 13px;
                               b{
-                                  margin-left: 15px;
+                                  margin-left: 5px;
                               }
                           }
                         }
@@ -249,6 +359,21 @@ $main-color: #0cbff1;
             }
 
         }
-      
+        .products{
+            .section{
+                .section-left{
+                    display: none;
+                }
+                .section-center{
+
+                }
+                .section-right{
+                    display: none;
+                }
+            }
+        }
+        .address-tdoctor{
+            padding: 18px;
+        }
     }
 }
