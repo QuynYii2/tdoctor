@@ -2266,4 +2266,12 @@ li {
   background-size: 35px;
 }
 
+.recommend_word_bx .swiper-button-prev {
+  border-radius: 5px;
+}
+
+.swiper-button-next {
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
