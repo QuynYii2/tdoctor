@@ -931,28 +931,28 @@ a {
   color: #0a6cdc;
   text-decoration: underline;
 }
-.body .address {
+.body .address-tdoctor {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
   padding: 30px;
 }
-.body .address .search-address h4 {
+.body .address-tdoctor .search-address h4 {
   margin-bottom: 20px;
 }
-.body .address .search-address .input-group .form-outline {
+.body .address-tdoctor .search-address .input-group .form-outline {
   width: 50%;
 }
-.body .address .map-address {
+.body .address-tdoctor .map-address {
   margin-top: 40px;
 }
-.body .address .map-address .system {
+.body .address-tdoctor .map-address .system {
   height: 60vh;
   overflow-y: auto;
   padding: 0;
   border: 1px solid gray;
   border-radius: 10px;
 }
-.body .address .map-address .system-header {
+.body .address-tdoctor .map-address .system-header {
   font-size: 17px;
   font-weight: 600;
   color: white;
@@ -960,10 +960,10 @@ a {
   border-radius: 10px 10px 0px 0px;
   background-color: #0cbff1;
 }
-.body .address .map-address .system .system-body {
+.body .address-tdoctor .map-address .system .system-body {
   background-color: #fafafa;
 }
-.body .address .map-address .system .system-body .system-bodyitem {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem {
   border: 1px solid #e5e5e5;
   background-color: #fff;
   box-shadow: 0 0 12px rgba(15, 61, 145, 0.12);
@@ -973,14 +973,14 @@ a {
   font-size: 15px;
   line-height: 28px;
 }
-.body .address .map-address .system .system-body .system-bodyitem span {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem span {
   color: #b3bdca;
 }
-.body .address .map-address .system .system-body .system-bodyitem a {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem a {
   color: #0cbff1;
   font-size: 14px;
 }
-.body .address .map-address .map {
+.body .address-tdoctor .map-address .map {
   width: 100%;
   height: 60vh;
 }
