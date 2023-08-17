@@ -32,106 +32,6 @@
   .body .topboard_area .form-article .article-desktop-responsive {
     display: none;
   }
-  .body .answer-doctor {
-    margin-top: 40px;
-  }
-  .body .answer-doctor .mentoring {
-    margin-bottom: 20px;
-  }
-  .body .answer-doctor .mentoring .mentoring-list {
-    height: 50vh;
-    padding: 10px;
-  }
-  .body .answer-doctor .mentoring .mentoring-list .mentoring-item {
-    margin-top: 20px;
-    padding-bottom: 10px;
-  }
-  .body .answer-doctor .mentoring .mentoring-list .mentoring-item .mentoring-number {
-    width: 80px;
-    border-radius: 20px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  .body .answer-doctor .mentoring .mentoring-list .mentoring-item .mentoring-content a {
-    font-size: 16px;
-  }
-  .body .answer-doctor .mentoring .mentoring-list .mentoring-item .mentoring-content span {
-    font-size: 11px;
-    padding: 0 8px;
-    font-weight: 500;
-  }
-  .body .answer-doctor .news .news-list {
-    height: 50vh;
-    overflow-y: auto;
-    overflow-x: clip;
-    padding: 10px;
-  }
-  .body .answer-doctor .news .news-list .news-item {
-    margin-top: 20px;
-    align-items: center;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-  }
-  .body .answer-doctor .news .news-list .news-item .news-img img {
-    width: 100%;
-  }
-  .body .answer-doctor .news .news-list .news-item .news-content h4 {
-    font-size: 16px;
-  }
-  .body .answer-doctor .news .news-list .news-item .news-content .content {
-    height: 40px;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 13px;
-    margin-bottom: 8px;
-  }
-  .body .answer-doctor .news .news-list .news-item .news-content .time {
-    font-size: 13px;
-  }
-  .body .answer-doctor .news .news-list .news-item .news-content .time .cate {
-    font-size: 13px;
-    margin-left: 20px;
-  }
-  .body .listContainer {
-    margin-top: 40px;
-  }
-  .body .listContainer .containerTitle .mentoring-list {
-    padding: 10px;
-    margin-top: 20px;
-  }
-  .body .listContainer .containerTitle .mentoring-list .mentoring-item {
-    margin-top: 10px;
-    align-items: center;
-    padding-bottom: 10px;
-  }
-  .body .listContainer .containerTitle .mentoring-list .mentoring-item .mentoring-number {
-    width: 80px;
-    height: 30px;
-  }
-  .body .listContainer .containerTitle .mentoring-list .mentoring-item .mentoring-content {
-    font-size: 14px;
-  }
-  .body .listContainer .containerTitle .mentoring-list .mentoring-item .mentoring-content span {
-    font-size: 11px;
-    padding: 0 8px;
-    font-weight: 500;
-  }
-  .body .listContainer .bestMentoringWrap {
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  .body .listContainer .bestMentoringWrap .bestMentoringTitle {
-    padding-bottom: 10px;
-  }
-  .body .listContainer .bestMentoringWrap .bestMentoringContent {
-    padding-top: 10px;
-  }
-  .body .listContainer .bestMentoringWrap .bestMentoringContent a {
-    font-size: 14px;
-    line-height: 28px;
-  }
   .footer {
     display: none !important;
   }
@@ -144,6 +44,7 @@
 @media (max-width: 992px) {
   .swiper-button-next {
     margin-right: -10px;
+    top: 15px;
     border: 1px solid black;
     --swiper-navigation-size: 13px;
     color: #0cbff1;
@@ -154,6 +55,7 @@
   }
   .swiper-button-prev {
     margin-left: -10px;
+    top: 15px;
     border: 1px solid black;
     --swiper-navigation-size: 13px;
     color: #0cbff1;
@@ -280,10 +182,10 @@
     display: none;
   }
   .body .topboard_area .form-article .article .list-doctor .content-doctor .time {
-    font-size: 13px;
+    font-size: 14px;
   }
   .body .topboard_area .form-article .article .list-doctor .content-doctor .time b {
-    margin-left: 5px;
+    margin-left: 15px;
   }
   .body .topboard_area .form-article .article .list-doctor .desc {
     display: none;
@@ -295,13 +197,6 @@
     border-radius: 10px;
     margin: 10px 0;
   }
-  .body .products .section .section-left {
-    display: none;
-  }
-  .body .products .section .section-right {
-    display: none;
-  }
-  .body .address-tdoctor {
-    padding: 18px;
-  }
-}/*# sourceMappingURL=responsive.css.map */
+}
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Nunito+Sans:wght@400;500&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500&family=Roboto:wght@500&family=Rubik:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Detail market</title>
+</head>
+<body>
+<div>
+    <header class="header container-fluid">
+        <div class="header-desktop align-items-center row">
+            <div class="col-md-2 col-5 hd-desktop--left">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-7 col-12 hd-desktop--between d-flex justify-content-center">
+                <div class="menu-item text-center"><a href="#"><i class="fa-regular fa-newspaper"></i>
+                    <p>News</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-laptop-medical"></i>
+                    <p>Medical Calculator</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i>
+                    <p>Education Training</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-user-doctor"></i>
+                    <p>Job Seeking</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i>
+                    <p>New medicine</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i>
+                    <p>Q&A</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-tag"></i>
+                    <p>New Promotion</p></a></div>
+                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i>
+                    <p>Event</p></a></div>
+            </div>
+            <div class="col-md-3 col-7 hd-desktop--right d-flex justify-content-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <select class="form-local" aria-label="Default select example">
+                    <option value="1"><a href="#">Hoa Kỳ</a></option>
+                    <option value="2"><a href="#">Việt Nam</a></option>
+                </select>
+                <div class="form-login">
+                    <a href="#"><i class="fa-solid fa-user"></i> Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile row">
+            <div class="row header-mobile--top">
+                <div class="col-5 hd-desktop--left">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-7 hd-desktop--right d-flex justify-content-end">
+                    <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href=""><i class="fa-regular fa-bell"></i></a>
+                    <button onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="col-12 hd-desktop--between">
+                <div class="swiper mySwiper" id="mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-regular fa-newspaper"></i>
+                            <p>News</p></a></div>
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i
+                                class="fa-solid fa-laptop-medical"></i>
+                            <p>Medical Calculator</p></a></div>
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i>
+                            <p>Education Training</p></a></div>
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-user-doctor"></i>
+                            <p>Job Seeking</p></a></div>
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i
+                                class="fa-solid fa-prescription-bottle-medical"></i>
+                            <p>New medicine</p></a></div>
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i>
+                            <p>Q&A</p></a></div>
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-tag"></i>
+                            <p>New Promotion</p></a></div>
+                        <div class="swiper-slide menu-item text-center"><a href="#"><i
+                                class="fa-solid fa-calendar-days"></i>
+                            <p>Event</p></a></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="nav_menu" id="demo">
+                <div class="nav_menu--header d-flex justify-content-between">
+                    <div onclick="closeMenu()" class="header-left">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="header-right">
+                        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                </div>
+                <div class="nav_menu--body">
+                    <div class="loginbox text-center">
+                        <a href="#">Log in now</a>
+                        <span> and connect to the worldwide Korean network > </span>
+                    </div>
+                    <div class="list-menu row">
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-regular fa-newspaper"></i>
+                            <p>News</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-laptop-medical"></i>
+                            <p>Medical Calculator</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-school"></i>
+                            <p>Education Training</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-user-doctor"></i>
+                            <p>Job Seeking</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i
+                                class="fa-solid fa-prescription-bottle-medical"></i>
+                            <p>New medicine</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-headset"></i>
+                            <p>Q&A</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-tag"></i>
+                            <p>New Promotion</p></a></div>
+                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-calendar-days"></i>
+                            <p>Event</p></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_search" id="nav_search">
+                <div class="nav_search--header d-flex justify-content-between">
+                    <div onclick="closeSearch()" class="header-left">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="nav_search--body">
+                    <div class="searchbox">
+                        <div class="input-group">
+                            <div class="form-outline">
+                                <input type="search" id="form1" class="form-control"
+                                       placeholder="Please enter a search term."/>
+                            </div>
+                            <button type="button" class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body ">
+        <div class="detail_banner">
+            <div class="inner">
+                <div class="view_header">
+                    <div class="view_title mobile_show">
+                        <a class="mobile_show view_back_btn">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC0SURBVHgB7dnBCcJQEEXRpzZgCZaQEizBEuzAdJDpTJd2IVZgCXFEhSjfhSGEzOQeeASyu3wIhC8BAACg7OA7vp7pNL62s50S+Y57zJREKe7i2ygB4qIiLirioiIuKuKiIi6qUtzU1qinSlIbZNWviKVmzjTtk7tpgB9pU+KPzJuJyBxMROZgIjIHE5E5mIjMwUTkuFYa3sm38G0779a+q++sREyfp7hXQrWeV9i1AAAA8Kc71Zkc9GB3Zi4AAAAASUVORK5CYII=">
+                        </a>
+                        <span>Thông tin chi tiết sản phẩm </span>
+                    </div>
+                    <div class="pc_show view_nav">
+                        <h3><a href="index.html">Home</a> > Others > Others</h3>
+                    </div>
+
+                </div>
+                <div class="view_container">
+                    <div class="view_right_container">
+                        <div class="left market_view_gallery gall_view">
+                            <div class="gallery_area">
+                                <div class="gallery">
+                                    <ul class="obj">
+                                        <li class="item">
+                                            <img src="https://data.heykorean.com/market_thumbnail/large/market/item/2023/08/14/918cb8e68b88.heic"
+                                                 alt="">
+                                        </li>
+                                    </ul>
+                                    <div class="gallery_loading">
+                                        Đang tải...
+                                    </div>
+                                    <div class="control">
+                                        <button type="button" class="btn_prev">
+                                            Trước
+                                        </button>
+                                        <button type="button" class="btn_next">
+                                            Kế tiếp
+                                        </button>
+                                    </div>
+                                    <div class="counter">
+                                        1/4
+                                    </div>
+                                </div>
+                                <div class="gallery_paging">
+                                    <ul class="gallery_thumb" >
+                                        <li class="on">
+                                            <a href="javascript:;">
+                                                <img src="https://data.heykorean.com/market_thumbnail/small/market/item/2023/08/14/9c7841279b88.heic"
+                                                     alt="">
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:;">
+                                                <img src="https://data.heykorean.com/market_thumbnail/small/market/item/2023/08/14/a0cfa9e78baa.heic"
+                                                     alt="">
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:;">
+                                                <img src="https://data.heykorean.com/market_thumbnail/small/market/item/2023/08/14/d3b2bb2eaba9.heic"
+                                                     alt="">
+                                            </a>
+                                        </li>
+                                        <li class="on">
+                                            <a href="javascript:;">
+                                                <img src="https://data.heykorean.com/market_thumbnail/small/market/item/2023/08/14/918cb8e68b88.heic"
+                                                     alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info_top_bx mobile_show">
+                            <span class="info_date">2023-08-14</span>
+                            <span class="info_like">0</span>
+                            <span class="info_view">222</span>
+                            <a class="info_report">Tuyên ngôn</a>
+                            <span>
+                                <a class="info_share"><img src="data:image/png;base64,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"></a>
+                            </span>
+
+                        </div>
+                        <strong class="product_title">
+                            bàn ủi Srixon
+                        </strong>
+                        <div class="banner pc_show">
+                            <a href="" target="_blank" class="ad pc">
+                                <img src="https://s3.amazonaws.com/qc.heykorean.com/qc/2023/01/25/2PRPxi2taWB.jpg" width="100%"
+                                     height="auto">
+                            </a>
+                        </div>
+                        <div class="product_overview mobile_show">
+                            <strong>
+
+                                toàn bộ
+
+
+                            </strong>
+                            <div>
+                                <dl class="info_price_bx">
+                                    <dt>
+
+                                        giá
+
+
+                                    </dt>
+                                    <dd>
+              <span class="reserved_icon">
+
+                    Đặt phòng
+
+
+              </span>
+                                        <span>
+
+                    $130
+
+
+              </span>
+                                    </dd>
+                                </dl>
+                                <dl class="info_sale_area_bx">
+                                    <dt>
+
+                                        vùng đất
+
+
+                                    </dt>
+                                    <dd>
+
+                                        áo mới
+
+
+                                    </dd>
+                                </dl>
+                                <dl class="info_category_bx">
+                                    <dt>
+
+                                        loại
+
+
+                                    </dt>
+                                    <dd>
+                                        <a href="" class="">
+
+                                            Thể thao/Sở thích/Trò chơi
+
+
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="info_category_bx sub_category">
+                                    <dt>
+                                    </dt>
+                                    <dd>
+                                        <a href="" class="">
+
+                                            &gt; Hàng Golf
+
+
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="banner mobile_show">
+                        </div>
+                        <div class="product_desc">
+                            <strong>
+                                giải thích sản phẩm
+                            </strong>
+                            <pre>
+                        <p>Số 4~ tr.</p><p>TRỤC NS PRO 950</p><p>Felx-R</p>
+                    </pre>
+                        </div>
+                        <div class="product_warning">
+                            <strong>
+                                Hãy cẩn thận trước khi giao dịch!!
+                            </strong>
+                            <p>
+                                Bài đăng đã được đăng ký bởi thành viên và HeyKorean không chịu bất kỳ trách nhiệm nào
+                                về nội dung đã đăng ký.
+                                Nếu bài đăng không phù hợp, vui lòng thông báo cho HeyKorean.
+                            </p>
+                            <button>
+                                Báo cáo cho trung tâm khách hàng &gt;
+                            </button>
+                        </div>
+                        <div class="product_map_wrap">
+                            <div class="product_map">
+                                <div id="mapContainer">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31454.35945586811!2d105.71057776193196!3d9.783412071597551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0f68a0a8c781d%3A0xa88c255d7d2648f0!2zdHQuIEPDonkgRMawxqFuZywgUGjhu6VuZyBIaeG7h3AsIEjhuq11IEdpYW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1692157226803!5m2!1svi!2s"
+                                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="product_etc ">
+                                <div class="product_addr d-flex">
+                                    <strong>vùng đất</strong>
+                                    <p>áo mới</p>
+                                </div>
+                                <div class="product_date d-flex">
+                                    <strong>mới đổi</strong>
+                                    <p>2023-08-15</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner pc_show">
+                            <a href="" target="_blank" class="ad pc">
+                                <img src="https://data.heykorean.com/ad/1690828335_PDK2_%20800x71.png" width="100%"
+                                     height="auto">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="view_left_container">
+                        <div class="left_info_bx pc_show">
+                            <div class="info_top_bx"><span class="info_date">2023-08-14</span>
+                                <span class="info_like">0</span>
+                                <span class="info_view">222</span>
+                                <a class="info_report">Tuyên ngôn</a>
+                                <span>
+                            <a class="info_share">
+                                <img src="data:image/png;base64,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">
+                            </a>
+                        </span>
+                            </div>
+                            <strong class="info_title">bàn ủi Srixon</strong>
+                            <div class="info_txt_bx">
+                                <dl class="info_price_bx">
+                                    <dt>giá</dt>
+                                    <dd><span class="reserved_icon">đặt trước</span>
+                                        <span>$130</span>
+                                    </dd>
+                                </dl>
+                                <dl class="info_sale_area_bx">
+                                    <dt>vùng đất</dt>
+                                    <dd>áo mới</dd>
+                                </dl>
+                                <dl class="info_category_bx">
+                                    <dt>loại</dt>
+                                    <dd>
+                                        <a href="" class="">
+                                            Thể thao/Sở thích/Trò chơi
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="info_category_bx sub_category">
+                                    <dt>
+                                    </dt>
+                                    <dd>
+                                        <a href="" class="">
+                                            &gt; Hàng Golf
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <button class="send_msg_btn">trò chuyện</button>
+                                <button class="like_count_btn">0</button>
+                            </div>
+                        </div>
+                        <div class="left_seller_bx">
+                            <strong class="seller_bx_title">Thông tin người bán</strong>
+                            <div class="seller_profile">
+                                <div class="seller_pic">
+                                    <div class="profile_img">
+                                        <div class="default-image">
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="seller_info">
+                                    <div class="seller_nick">
+                                        <a href="" class="">julie</a>
+                                        <button class="">theo</button>
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li>
+                                            <span>mục</span>
+                                            <strong>14</strong>
+                                        </li>
+                                        <li>
+                                            <span>bán</span>
+                                            <strong>6</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="view_store_btn">
+                                xem cửa hàng
+                            </button>
+                        </div>
+                        <div class="more_from_seller_bx">
+                            <div class="more_from_seller_top">
+                                <strong class="more_from_seller_title">
+                                    Danh sách các sản phẩm từ người bán này
+                                </strong>
+                                <a href="" class="see_all_btn mobile_show">
+                                    Nhìn thấy tất cả
+                                </a>
+                            </div>
+                            <div class="list_wrap">
+                                <div class="item_wrap general_item sold_out_item d-flex">
+                                    <a href="" class="item_img_wrap">
+                                        <img src="https://data.heykorean.com/market_thumbnail/medium/market/item/2023/07/22/f0ca699698a9.heic">
+                                        <div class="icon left-bottom store_status">
+                                    <span>
+                                        bán hết
+                                    </span>
+                                        </div>
+                                        <span class="icon left-top">
+
+                                </span>
+                                        <div class="icon right-top">
+                                        </div>
+                                        <span class="img_coupon">
+                                    phiếu mua hàng
+                                </span>
+                                    </a>
+                                    <div class="item_txt_wrap">
+                                        <strong>
+                                            <a href="" class="">
+                                                Trình điều khiển Taylormade sim2
+                                            </a>
+                                        </strong>
+                                        <span class="item_location">
+                                    áo mới
+                                </span>
+                                        <span class="item_date">
+                                    2023-08-11
+                                </span>
+                                        <div class="item_price_wrap">
+                                    <span class="item_price">
+                                        $150
+                                    </span>
+                                        </div>
+                                        <button class="like_btn">
+                                        </button>
+                                    </div>
+                                    <div class="bg more_popup_bg ">
+                                    </div>
+                                </div>
+                                <div class="item_wrap general_item d-flex">
+                                    <a href="" class="item_img_wrap">
+                                        <img src="https://data.heykorean.com/market_thumbnail/medium/market/item/2023/07/22/0389760799bb.heic">
+                                        <span class="icon left-top">
+                                </span>
+                                        <div class="icon right-top">
+                                        </div>
+                                        <span class="img_coupon">
+                                    phiếu mua hàng
+                                </span>
+                                    </a>
+                                    <div class="item_txt_wrap">
+                                        <strong>
+                                            <a href="" class="">
+                                                Lai Ping 5
+                                            </a>
+                                        </strong>
+                                        <span class="item_location">
+                                    áo mới
+                                </span>
+                                        <span class="item_date">
+                                    2023-08-14
+                                </span>
+                                        <div class="item_price_wrap">
+                                    <span class="item_price">
+                                        $70
+                                    </span>
+                                        </div>
+                                        <button class="like_btn">
+                                        </button>
+                                    </div>
+                                    <div class="bg more_popup_bg " >
+                                    </div>
+                                </div>
+                                <div class="item_wrap general_item d-flex">
+                                    <a href="" class="item_img_wrap">
+                                        <img src="https://data.heykorean.com/market_thumbnail/medium/market/item/2023/07/22/14afee3c9b9a.heic">
+                                        <span class="icon left-top">
+
+                                </span>
+                                        <div class="icon right-top">
+                                        </div>
+                                        <span class="img_coupon">
+                                    phiếu mua hàng
+                                </span>
+                                    </a>
+                                    <div class="item_txt_wrap">
+                                        <strong>
+                                            <a href="" class="">
+                                                Mười bốn bộ sắt
+                                            </a>
+                                        </strong>
+                                        <span class="item_location">
+                                    áo mới
+                                </span>
+                                        <span class="item_date">
+                                    2023-08-14
+                                </span>
+                                        <div class="item_price_wrap">
+                                    <span class="item_price">
+                                        $550
+                                    </span>
+                                        </div>
+                                        <button class="like_btn">
+                                        </button>
+                                    </div>
+                                    <div class="bg more_popup_bg" >
+                                    </div>
+                                </div>
+                                <div class="item_wrap general_item sold_out_item d-flex">
+                                    <a href="" class="item_img_wrap">
+                                        <img
+                                                src="https://data.heykorean.com/market_thumbnail/medium/market/item/2023/07/22/4878ecdea9a8.heic">
+                                        <div class="icon left-bottom store_status">
+                                    <span>
+                                        bán hết
+                                    </span>
+                                        </div>
+                                        <span class="icon left-top">
+
+                                </span>
+                                        <div class="icon right-top">
+                                        </div>
+                                        <span class="img_coupon">
+                                    phiếu mua hàng
+                                </span>
+                                    </a>
+                                    <div class="item_txt_wrap">
+                                        <strong>
+                                            <a href="" class="">
+                                                trình điều khiển taylormade m4
+                                            </a>
+                                        </strong>
+                                        <span class="item_location">
+                                    áo mới
+                                </span>
+                                        <span class="item_date">
+                                    2023-08-14
+                                </span>
+                                        <div class="item_price_wrap">
+                                    <span class="item_price">
+                                        $90
+                                    </span>
+                                        </div>
+                                        <button class="like_btn">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view_more_item_wrap">
+                    <div class="similar_item_bx more_item_bx">
+                        <div class="more_item_top">
+                            <strong class="more_item_title">
+                                Sản phẩm tương tự
+                            </strong>
+                            <div class="page_slide_wrap">
+                                <div class="page_slide ">
+                                    <div class="before">
+                                        <img src="https://market.heykorean.com/img/arrow_left_sm.912d6b5c.svg">
+                                    </div>
+                                    <div class="next">
+                                        <img src="https://market.heykorean.com/img/arrow_right_sm.66a990b1.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_wrap d-flex">
+                            <div class="item_wrap general_item">
+                                <a href="" class="item_img_wrap">
+                                    <img src="https://data.heykorean.com/market_thumbnail/medium/market/item/2023/05/07/436261dc99b8.jpg">
+                                    <span class="icon left-top">
+
+                            </span>
+                                    <div >
+                                <span>
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAYAAADjVADoAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP2SURBVHgB7ZpNTBNBFMf/u6WlFrTVNCiJVvwMGvAkiSZN7MUTMdaDFy/GhHgykRrvgvGuePBM9G4whgseBOVCapDEkBBQvjxUoEARKF2gXd8sbbPbr10IlMWdX7LdvrfDzOPfN6+znQU4HA6Hw+FwOBwOh8PhlAkh1zH2Bq2Q4cnYNTWA0wlTIYjocjRjCLtIRd4gwGN6qcvYIjkEAeYiiUl63VshDgIfh8/fDgYb6gw2H+oi9BodSCF+LxwJ0ilotH0wGAyRFq9KtRFhDQJ6DawihG49OZBTY/10LRLOC1n7lOjASTocDgfsdnvWL0lSLBwOd9C0aNPr80AKITVcxMrVG1n7rN2NZjrc7q1DhUeW5V4DtfL/nxqCIDwz0s4KNSKwuLjYqtfIEsWSZQWJ4SnVxirfGh5RFEtOEasIASqarZQVgWLXLSMEo1ThtJQQKFE4rSZE0cJpOSFQpHCaamXZ31/Y39gIaBeMWro3lpQDcTIi0EWAwO5cQ2qfFTOiIKbKCL8f+wbPiDSmyojwt8L+y5eAqipsmxPJWTxffoHq1KrGnxRsOJPT1lRCSInC/s1N7IhzyXGc3xzPv1Dgx2hTCdF0tbDftsMoczOhFKYSonKX909mbDWG2xoWYnXdjr5RH4YjXsTpvcuxgabTEQQuTsMM2KcjqPwxCtvSimInGi9giBYgDz2vUS1rM0NCJb0+0fgMCTG34kJbtx9zyy6NPzxVi74xH57eHEAVCbMfiIl1HH7/SRFCDbOr+r9j4l4zku5qzTWhQJHI89x992hCEivqMnbN8aNYfTuEtb8yinHs3CG4gldQLn7azmJF3Poaqe7+AidlQjFS7sOIPbiDlNOR9ZEQk1+vNWu+OPIyYqDyssb2jSzBqxKBNkvg9XoxMjJCS+KtNfHCrzVM0JTZ8NWinFTMzmtE8NOKrL6+XhObuLSsTJm1pobSfUEHx+iUZiAmROZ9NBpVBlU6mpkvuxDq2JgALS0t2dhcLhd6enoU20aCqZEhx3L70l1ZCglJM5gatS1I69hPfD5fUTtTQLPI8ofcv8/LCFFGKJmSs/frdmnjPtJbZizd/Okbgng8nk0/paPIfKcgp/pQRux/ogE6sfgwODioZCvLBEYmU5XYorEuik3552WqD/3Xb/Xm9qW74U+dB+j0OWMzpdnBBmJTQ8UZ2kiZRBmh2NgHtpixWe1iWaqesmnu6O2IG3rygQbsRFr5IrQb2VbbCyg29tPbyxJNOim2B9DB6N0nG6yjgJ8VndB+icBIb/e3F7nMYg7BANt6FobUr8PWcwksJZkITO0YTEA6tgAd7MxiYg+I9ILD4XA4HA6Hw+FwOByO2fgHpTBAn7S6BCMAAAAASUVORK5CYII=">
+                                </span>
+                                    </div>
+                                    <span class="img_coupon">
+                                phiếu mua hàng
+                            </span>
+                                </a>
+                                <div class="item_txt_wrap">
+                                    <strong >
+                                        <a href="" class="">
+                                            Giày Golf Nữ Adidas Giày Mới 6.5M
+                                        </a>
+                                    </strong>
+                                    <span class="item_location">
+                                áo mới
+                            </span>
+                                    <span class="item_date">
+                                2023-08-15
+                            </span>
+                                    <div class="item_price_wrap">
+                                <span class="item_price">
+                                    $60
+                                </span>
+                                    </div>
+                                    <button class="like_btn">
+                                    </button>
+                                    <div class="item_etc_bx">
+                                <span class="item_like">
+                                    2
+                                </span>
+                                        <span class="item_view">
+                                    344
+                                </span>
+                                    </div>
+                                </div>
+                                <div class="bg more_popup_bg">
+                                </div>
+                            </div>
+                            <div class="item_wrap general_item">
+                                <a href="" class="item_img_wrap">
+                                    <img src="https://store.heykorean.com/market/product/2022/07/14/4hrp6Kpg.JPG">
+                                    <span class="icon left-top"></span>
+                                    <div class="icon right-top">
+                                    </div>
+                                    <span class="img_coupon">
+                                phiếu mua hàng
+                            </span>
+                                </a>
+                                <div class="item_txt_wrap">
+                                    <strong >
+                                        <a href="" class="">
+                                            Daiwa G3 Nữ Lái 12.5 Độ
+                                        </a>
+                                    </strong>
+                                    <span class="item_location">
+                                áo mới
+                            </span>
+                                    <span class="item_date">
+                                2023-08-15
+                            </span>
+                                    <div class="item_price_wrap">
+                                <span class="item_price">
+                                    $300
+                                </span>
+                                    </div>
+                                    <button class="like_btn">
+                                    </button>
+                                    <div class="item_etc_bx">
+                                <span class="item_like">
+                                    0
+                                </span>
+                                        <span class="item_view">
+                                    1,228
+                                </span>
+                                    </div>
+                                </div>
+                                <div class="bg more_popup_bg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer container d-flex">
+        <div class="footer-left">
+            <h3>About HeyKorean</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Advertising inquiry</a></p>
+            <p><a href="#">Recruitment</a></p>
+        </div>
+        <div class="footer-center">
+            <h3>About HeyKorean</h3>
+            <p><a href="#">Job Seeking</a></p>
+            <p><a href="#">real estate</a></p>
+            <p><a href="#">buying and selling</a></p>
+            <p><a href="#">Ktown</a></p>
+            <p><a href="#">club</a></p>
+            <p><a href="#">community</a></p>
+            <p><a href="#">Mentoring</a></p>
+        </div>
+        <div class="footer-right">
+            <h3>Customer Center</h3>
+            <p><a href="#">contact us</a></p>
+            <p><a href="#">Terms of Use</a></p>
+            <p><a href="#">Privacy Statement</a></p>
+            <p><a href="#">Safe transaction rules</a></p>
+            <p><a href="#">DMCA Notice</a></p>
+            <p><a href="#">Accessibility</a></p>
+
+        </div>
+    </div>
+    <div class="bottom_copyarea container d-flex justify-content-between">
+        <div class="bottom_copyarea--left"> © 1998-2022, HeyKorean, Inc. All Rights Reserved. <i
+                class="fa-regular fa-envelope"></i></div>
+        <div class="bottom_copyarea--right">
+            <i class="fa-solid fa-earth-asia"></i>
+            <select class="form-local" aria-label="Default select example">
+                <option value="1"><a href="#">Hoa Kỳ</a></option>
+                <option value="2"><a href="#">Việt Nam</a></option>
+            </select>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js"
+        integrity="sha512-4Ooh3fl4STrmn95ZbS/J6l8csp/FvSKPaeDAH/IaPQGJIx9lmpuxXZTCYKR2W5+Bt7i74exPvAT2PsWnac+sow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/style.js"></script>
+
+</html>
