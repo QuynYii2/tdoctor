@@ -2043,9 +2043,8 @@ button {
   z-index: 1;
 }
 
-[class*=button] {
-  border-radius: var(--border-radius-s);
-  min-height: 48px;
+.search_share_icon {
+  display: none;
 }
 
 .swiper-button-next {
