@@ -295,7 +295,7 @@ li {
 }
 
 .info_top_bx .info_share {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .view_right_container .product_title {
@@ -1771,7 +1771,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* Trong dòng #6 | http://localhost:63342/Tdoctor/Market-page.html?_ijt=el7ars55u15s35dji7t701hoql&_ij_reload=RELOAD_ON_SAVE */
 .left_side_wrap {
   width: 215px;
 }
@@ -1984,7 +1983,7 @@ input[type=number] {
 }
 
 .inner {
-  width: 100%;
+  width: 1144px;
 }
 
 input[type=number] {
