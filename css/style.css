@@ -295,7 +295,7 @@ li {
 }
 
 .info_top_bx .info_share {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .view_right_container .product_title {
@@ -409,8 +409,7 @@ a {
   color: #0cbff1;
 }
 .body .searcharea .loginbox a:hover {
-  -webkit-text-decoration: revert;
-          text-decoration: revert;
+  text-decoration: revert;
 }
 .body .topboard_area {
   margin-top: 40px;
@@ -779,8 +778,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .body .products .section .item {
   padding: 5px;
@@ -795,8 +793,7 @@ a {
 .body .products .section .item-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .body .products .section .item-img .button-view {
   display: none;
@@ -922,8 +919,7 @@ a {
 .body .products .section-left img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .body .products .section .brand-item {
   margin: 8px 0;
@@ -964,20 +960,19 @@ a {
 .body .address-tdoctor .search-address h4 {
   margin-bottom: 20px;
 }
-.body .address .search-address .input-group .form-outline {
+.body .address-tdoctor .search-address .input-group .form-outline {
   width: 50%;
 }
-.body .address .map-address {
+.body .address-tdoctor .map-address {
   margin-top: 40px;
 }
-.body .address .map-address .system {
-  height: 60vh;
-  overflow-y: auto;
+.body .address-tdoctor .map-address .system {
+  margin-bottom: 30px;
   padding: 0;
   border: 1px solid gray;
   border-radius: 10px;
 }
-.body .address .map-address .system-header {
+.body .address-tdoctor .map-address .system-header {
   font-size: 17px;
   font-weight: 600;
   color: white;
@@ -985,10 +980,12 @@ a {
   border-radius: 10px 10px 0px 0px;
   background-color: #0cbff1;
 }
-.body .address .map-address .system .system-body {
+.body .address-tdoctor .map-address .system .system-body {
+  height: 55vh;
+  overflow-y: auto;
   background-color: #fafafa;
 }
-.body .address .map-address .system .system-body .system-bodyitem {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem {
   border: 1px solid #e5e5e5;
   background-color: #fff;
   box-shadow: 0 0 12px rgba(15, 61, 145, 0.12);
@@ -998,14 +995,14 @@ a {
   font-size: 15px;
   line-height: 28px;
 }
-.body .address .map-address .system .system-body .system-bodyitem span {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem span {
   color: #b3bdca;
 }
-.body .address .map-address .system .system-body .system-bodyitem a {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem a {
   color: #0cbff1;
   font-size: 14px;
 }
-.body .address .map-address .map {
+.body .address-tdoctor .map-address .map {
   width: 100%;
   height: 60vh;
 }
@@ -1649,7 +1646,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* Trong dòng #6 | http://localhost:63342/Tdoctor/Market-page.html?_ijt=el7ars55u15s35dji7t701hoql&_ij_reload=RELOAD_ON_SAVE */
 .left_side_wrap {
   width: 215px;
 }
@@ -1862,7 +1858,7 @@ input[type=number] {
 }
 
 .inner {
-  width: 100%;
+  width: 1144px;
 }
 
 input[type=number] {
@@ -2302,4 +2298,3 @@ li {
 }
 
 /*# sourceMappingURL=style.css.map */
-
