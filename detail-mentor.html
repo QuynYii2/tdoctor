@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Nunito+Sans:wght@400;500&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500&family=Roboto:wght@500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header container-fluid">
+    <div class="header-desktop align-items-center row">
+        <div class="col-md-2 col-5 hd-desktop--left text-center">
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="col-md-7 col-12 hd-desktop--between d-flex justify-content-center">
+            <div class="menu-item text-center"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+            <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Mentoring</p></a></div>
+            <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+            <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>Clinic</p></a></div>
+            <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i><p>Recruitment</p></a></div>
+            <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Selling buying</p></a></div>
+        </div>
+        <div class="col-md-3 col-7 hd-desktop--right d-flex justify-content-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <select class="form-local" aria-label="Default select example">
+                <option value="1"><a href="#">Hoa Kỳ</a></option>
+                <option value="2"><a href="#">Việt Nam</a></option>
+            </select>
+            <div class="form-login">
+                <a href="#"><i class="fa-solid fa-user"></i> Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-mobile row">
+        <div class="row header-mobile--top">
+            <div class="col-5 hd-desktop--left">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-7 hd-desktop--right d-flex justify-content-end">
+                <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href=""><i class="fa-regular fa-bell"></i></a>
+                <button onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="col-12 hd-desktop--between">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Mentoring</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>Clinic</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i><p>Recruitment</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Selling buying</p></a></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="nav_menu" id="demo">
+            <div class="nav_menu--header d-flex justify-content-between">
+                <div onclick="closeMenu()" class="header-left">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="header-right">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+            </div>
+            <div class="nav_menu--body">
+                <div class="loginbox text-center">
+                    <a href="#">Log in now</a>
+                    <span> and connect to the worldwide Korean network > </span>
+                </div>
+                <div class="list-menu row">
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-laptop-medical"></i><p>Mentoring</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>Clinic</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-headset"></i><p>Recruitment</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Selling buying</p></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_search" id="nav_search">
+            <div class="nav_search--header d-flex justify-content-between">
+                <div onclick="closeSearch()" class="header-left">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav_search--body">
+                <div class="searchbox">
+                    <div class="input-group">
+                        <div class="form-outline">
+                            <input type="search" id="form1" class="form-control" placeholder="Please enter a search term." />
+                        </div>
+                        <button type="button" class="btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="body ">
+    <div class="container mainContentWrap">
+        <div class="questionWrap">
+            <div class="questionTitle d-flex">
+                <div class="boxSizing">
+                    It is related to the NYC summer street event.
+                </div>
+                <div class="waterDropWrap">
+                    <i class="fa-solid fa-droplet"></i> 10
+                </div>
+            </div>
+            <div class="questionContent">
+                <div class="questionTxt">
+                    Last Saturday, my children and their friends went to a summer street event hosted by NYC. It is said that he blocked Park Ave and rode a citi bike. The problem to ask is, as you know, citi bikes for rent are of two types: e-bike (electric) and classic bike (general). When you rent this bike, you enter the free test ride code shown in the event notice and ride it, but here the e-bike is not applicable to the event bike and the usage fee is charged. A child who did not know the contents rode an e-bike. The fact that only one type of bicycle is applicable to the event was not announced anywhere in advance of the event, and it was said that there was no information posted at the bicycle rental place on site.
+
+                    So, I sent an e-mail requesting a refund, pointing out the insufficient guidance on the event progress to the relevant places and asking whether the responsibility should be passed on to the bona fide event participants. In the reply, we apologized for the charge for the e-bike usage fee and also said that we would seriously deal with the content of our objection, but it was said that there was no refund. The bike fee is $21.56, but I feel like an idiot going over it.
+
+                    I ask for your opinion on what to do.
+                </div>
+            </div>
+            <div class="recommend">
+                <button><i class="fa-solid fa-thumbs-up"></i> Recommended <span>1</span></button>
+                <button> scrap</button>
+            </div>
+        </div>
+    </div>
+    <div class="answerWrap d-flex">
+        <div class="container">
+            <div class="answerArea">
+                 <span>
+                  If you answer, you will receive 10 points, and if your answer is accepted, you will receive 10 points and 10 drops of water.
+                </span>
+                <button>
+                    answer
+                </button>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+            <div class="commentWrap">
+                <div class="commentWrap-top align-items-center">
+                    <div class="information d-flex">
+                        <div class="img-avatar">
+                            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png">
+                        </div>
+                        <div>
+                            <div class="name">
+                                unionstreet
+                            </div>
+                            <div class="statistical d-flex">
+                                <p>Adoption by dong: 13 </p>
+                                <p>Adoption rate 5.8% </p>
+                                <p>Question 0 </p>
+                                <p>Closing rate 0% </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <button class="button"><i class="fa-solid fa-thumbs-up"></i> Featured <span>1</span></button>
+                        <button class="button"> scrap</button>
+                        <button class="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="commentWrap-body">
+                    <p class="comment">I think we can sue for this</p>
+                    <p class="date">23-08-17</p>
+                </div>
+                <div class="commentWrap-footer">
+                    Add a comment
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="footer container d-flex">
+    <div class="footer-left">
+        <h3>About HeyKorean</h3>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Advertising inquiry</a></p>
+        <p><a href="#">Recruitment</a></p>
+    </div>
+    <div class="footer-center">
+        <h3>About HeyKorean</h3>
+        <p><a href="#">Job Seeking</a></p>
+        <p><a href="#">real estate</a></p>
+        <p><a href="#">buying and selling</a></p>
+        <p><a href="#">Ktown</a></p>
+        <p><a href="#">club</a></p>
+        <p><a href="#">community</a></p>
+        <p><a href="#">Mentoring</a></p>
+    </div>
+    <div class="footer-right">
+        <h3>Customer Center</h3>
+        <p><a href="#">contact us</a></p>
+        <p><a href="#">Terms of Use</a></p>
+        <p><a href="#">Privacy Statement</a></p>
+        <p><a href="#">Safe transaction rules</a></p>
+        <p><a href="#">DMCA Notice</a></p>
+        <p><a href="#">Accessibility</a></p>
+
+    </div>
+</div>
+<div class="bottom_copyarea d-flex justify-content-between">
+    <div class="container">
+        <div class="bottom_copyarea--left"> © 1998-2022, HeyKorean, Inc. All Rights Reserved. <i class="fa-regular fa-envelope"></i></div>
+        <div class="bottom_copyarea--right">
+            <i class="fa-solid fa-earth-asia"></i>
+            <select class="form-local" aria-label="Default select example">
+                <option value="1"><a href="#">Hoa Kỳ</a></option>
+                <option value="2"><a href="#">Việt Nam</a></option>
+            </select>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js" integrity="sha512-4Ooh3fl4STrmn95ZbS/J6l8csp/FvSKPaeDAH/IaPQGJIx9lmpuxXZTCYKR2W5+Bt7i74exPvAT2PsWnac+sow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/style.js"></script>
+
+
+</html>

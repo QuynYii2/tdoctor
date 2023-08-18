@@ -161,7 +161,115 @@ $main-color: #0cbff1;
             }
           }
         }
+        .mainContentWrap{
+          .questionWrap{
+            .questionTitle{
+              margin-bottom: 20px;
+              .boxSizing{
+                font-size: 15px;
 
+              }
+              .waterDropWrap{
+                margin-left: 10px;
+                color: $main-color;
+                padding: 2px 8px;
+                border-radius: 20px;
+                border: 1px solid $main-color;
+                font-size: 16px;
+              }
+            }
+            .questionContent{
+              padding: 0 40px;
+              font-size: 16px;
+              .questionTxt{
+                font-size: 13px;
+              }
+            }
+            .recommend{
+              margin: 30px 0;
+              button{
+                padding: 5px;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+        .answerWrap{
+          background: #f6f6f6;
+          padding: 30px 0 20px;
+          .answerArea{
+            padding: 20px;
+            border: 1px solid #ccc;
+            background: white;
+            width: inherit;
+            display: flex;
+            justify-content: space-around;
+            span{
+              font-size: 12px;
+              margin-right: 20px;
+            }
+            button{
+              padding: 10px;
+              font-size: 13px;
+              font-weight: 600;
+            }
+          }
+          .commentWrap{
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: white;
+            width: inherit;
+            &-top{
+              display: block;
+              padding-bottom: 10px;
+              .information{
+                .img-avatar{
+                  width: 80px;
+                  margin-right: 10px;
+                }
+                .name{
+                  font-size: 16px;
+                }
+                .statistical{
+                  font-size: 11px;
+                  p{
+                    margin-right: 20px;
+                  }
+                }
+              }
+              .recommend{
+                margin-top: 10px;
+                .button{
+                  font-size: 12px;
+                  margin: 0 5px;
+                }
+                .ellipsis{
+                  background: white;
+                  font-size: 20px;
+                }
+              }
+            }
+            &-body{
+              margin-top: 20px;
+              .comment{
+                font-size: 15px;
+              }
+              .date{
+                margin-top: 20px;
+                font-size: 11px;
+              }
+            }
+            &-footer{
+              padding-top: 20px;
+              margin-top: 10px;
+              border-top: 1px solid #ccc;
+              font-size: 12px;
+              font-weight: 700;
+              color: #999999;
+            }
+          }
+        }
     }
     .footer{
         display: none!important;
@@ -171,6 +279,7 @@ $main-color: #0cbff1;
         padding: 20px 10px;
         display: block;
     }
+
 }
 
 @media (max-width: 992px){

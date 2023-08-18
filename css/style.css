@@ -366,6 +366,16 @@ a {
 .body {
   margin-top: 135px;
 }
+.body .question {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+.body .question a {
+  background: #0cbff1;
+  color: white;
+  padding: 5px;
+}
 .body .banner {
   margin-top: 20px;
 }
@@ -409,8 +419,7 @@ a {
   color: #0cbff1;
 }
 .body .searcharea .loginbox a:hover {
-  -webkit-text-decoration: revert;
-          text-decoration: revert;
+  text-decoration: revert;
 }
 .body .topboard_area {
   margin-top: 40px;
@@ -779,8 +788,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .body .products .section .item {
   padding: 5px;
@@ -795,8 +803,7 @@ a {
 .body .products .section .item-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .body .products .section .item-img .button-view {
   display: none;
@@ -922,8 +929,7 @@ a {
 .body .products .section-left img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .body .products .section .brand-item {
   margin: 8px 0;
@@ -964,20 +970,19 @@ a {
 .body .address-tdoctor .search-address h4 {
   margin-bottom: 20px;
 }
-.body .address .search-address .input-group .form-outline {
+.body .address-tdoctor .search-address .input-group .form-outline {
   width: 50%;
 }
-.body .address .map-address {
+.body .address-tdoctor .map-address {
   margin-top: 40px;
 }
-.body .address .map-address .system {
-  height: 60vh;
-  overflow-y: auto;
+.body .address-tdoctor .map-address .system {
+  margin-bottom: 30px;
   padding: 0;
   border: 1px solid gray;
   border-radius: 10px;
 }
-.body .address .map-address .system-header {
+.body .address-tdoctor .map-address .system-header {
   font-size: 17px;
   font-weight: 600;
   color: white;
@@ -985,10 +990,12 @@ a {
   border-radius: 10px 10px 0px 0px;
   background-color: #0cbff1;
 }
-.body .address .map-address .system .system-body {
+.body .address-tdoctor .map-address .system .system-body {
+  height: 55vh;
+  overflow-y: auto;
   background-color: #fafafa;
 }
-.body .address .map-address .system .system-body .system-bodyitem {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem {
   border: 1px solid #e5e5e5;
   background-color: #fff;
   box-shadow: 0 0 12px rgba(15, 61, 145, 0.12);
@@ -998,16 +1005,135 @@ a {
   font-size: 15px;
   line-height: 28px;
 }
-.body .address .map-address .system .system-body .system-bodyitem span {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem span {
   color: #b3bdca;
 }
-.body .address .map-address .system .system-body .system-bodyitem a {
+.body .address-tdoctor .map-address .system .system-body .system-bodyitem a {
   color: #0cbff1;
   font-size: 14px;
 }
-.body .address .map-address .map {
+.body .address-tdoctor .map-address .map {
   width: 100%;
   height: 60vh;
+}
+.body .mainContentWrap .questionWrap .questionTitle {
+  margin-bottom: 20px;
+}
+.body .mainContentWrap .questionWrap .questionTitle .boxSizing {
+  font-size: 19px;
+}
+.body .mainContentWrap .questionWrap .questionTitle .waterDropWrap {
+  display: flex;
+  margin-left: 10px;
+  color: #0cbff1;
+  padding: 2px 8px;
+  border-radius: 20px;
+  border: 1px solid #0cbff1;
+  font-size: 16px;
+  height: min-content;
+  align-items: center;
+}
+.body .mainContentWrap .questionWrap .questionContent {
+  padding: 0 40px;
+  font-size: 16px;
+}
+.body .mainContentWrap .questionWrap .recommend {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.body .mainContentWrap .questionWrap .recommend button {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #999999;
+  background: white;
+  border-radius: 5px;
+}
+.body .answerWrap {
+  background: #f6f6f6;
+  padding: 30px 0 20px;
+}
+.body .answerWrap .answerArea {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+}
+.body .answerWrap .answerArea span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #999999;
+  margin-right: 20px;
+}
+.body .answerWrap .answerArea button {
+  padding: 10px 40px;
+  background: #4a5470;
+  color: white;
+  font-weight: 600;
+}
+.body .answerWrap .commentWrap {
+  margin-top: 20px;
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  background: white;
+  width: inherit;
+}
+.body .answerWrap .commentWrap-top {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.body .answerWrap .commentWrap-top .information .img-avatar {
+  width: 60px;
+  margin-right: 20px;
+}
+.body .answerWrap .commentWrap-top .information .img-avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.body .answerWrap .commentWrap-top .information .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.body .answerWrap .commentWrap-top .information .statistical {
+  color: #999999;
+  font-weight: 600;
+  font-size: 14px;
+}
+.body .answerWrap .commentWrap-top .information .statistical p {
+  margin-right: 15px;
+}
+.body .answerWrap .commentWrap-top .recommend .button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  background: white;
+}
+.body .answerWrap .commentWrap-top .recommend .ellipsis {
+  background: white;
+  font-size: 20px;
+}
+.body .answerWrap .commentWrap-body {
+  margin-top: 20px;
+}
+.body .answerWrap .commentWrap-body .date {
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999999;
+}
+.body .answerWrap .commentWrap-footer {
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999999;
 }
 .body hr {
   margin: 50px 0;
@@ -1487,7 +1613,6 @@ div.info_top_bx:nth-child(1) > span:nth-child(5) {
 }
 .gallery_area .gallery .control .btn_prev {
   left: 6px;
-  background: url(../img/ic_arrow_prev.272c440a.svg) no-repeat 50%;
 }
 .gallery_area .gallery .control [class^=btn] {
   position: absolute;
@@ -1497,12 +1622,10 @@ div.info_top_bx:nth-child(1) > span:nth-child(5) {
   height: 60px;
   text-indent: -9999px;
   opacity: 0.5;
-  opacity: 0.35s linear 0s;
   font-family: Noto Sans, sans-serif;
 }
 .gallery_area .gallery .control .btn_next {
   right: 6px;
-  background: url(../img/ic_arrow_prev.272c440a.svg) no-repeat 50%;
   transform: rotate(180deg);
 }
 .gallery_area .gallery .counter {
@@ -1525,7 +1648,6 @@ div.info_top_bx:nth-child(1) > span:nth-child(5) {
 }
 .gallery_area .gallery_loading {
   position: absolute;
-  background: url(../img/icon_gallery_loading.45596db5.png) 50% 50% no-repeat;
   width: 56px;
   height: 56px;
   top: 50%;
@@ -2243,7 +2365,6 @@ strong {
 }
 
 .num_right {
-  background: url(../img/num_right_btn.84a01c74.svg) no-repeat 50%;
   background-size: auto;
   background-size: 10px;
 }
@@ -2302,4 +2423,3 @@ li {
 }
 
 /*# sourceMappingURL=style.css.map */
-
