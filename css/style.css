@@ -2421,4 +2421,133 @@ li {
   border-radius: 5px;
 }
 
+.footer-container .container {
+  max-width: 1345px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.footer-container .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.footer-container .container .row .footer__block {
+  padding-top: 40px;
+}
+.footer-container .footer__block h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 12px;
+}
+.footer-container .footer__block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-container .menu__footer li {
+  margin-bottom: 10px;
+}
+.footer-container .menu__footer li a {
+  font-size: 16px;
+  color: #000;
+}
+.footer-container .social__list-f li a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.footer-container .social__list-f li a img {
+  width: 18px;
+  max-width: 100%;
+  display: block;
+  transition: 0.2s;
+}
+.footer-container .social__list-f li a span {
+  font-size: 16px;
+  color: #000;
+  padding-left: 8px;
+}
+.footer-container .address__list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.footer-container .address__list li img {
+  width: 18px;
+  margin-top: 5px;
+}
+.footer-container .address__list li span {
+  font-size: 16px;
+  color: #000;
+  padding-left: 18px;
+}
+.footer-container .address__list li a {
+  display: block;
+  font-size: 16px;
+  color: #000;
+  padding-left: 18px;
+}
+
+.body .listContainer .bestMentoringWrap .Box {
+  position: relative;
+  width: 100%;
+  height: 275px;
+}
+.body .listContainer .bestMentoringWrap .Box .textArea {
+  height: 174px;
+  padding-left: 14px;
+  padding-bottom: 8px;
+}
+.body .listContainer .bestMentoringWrap .Box .textArea .Topbanner {
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 14px;
+}
+.body .listContainer .bestMentoringWrap .Box .textArea li {
+  padding-top: 9px;
+  font-size: 11px;
+  width: 210px;
+}
+.body .listContainer .bestMentoringWrap .Box .textArea a {
+  text-decoration: none;
+  color: black;
+}
+.body .listContainer .bestMentoringWrap .Box .textArea .Toptext {
+  width: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.body .listContainer .bestMentoringWrap .Box .textArea .clock {
+  float: right;
+  color: #989898;
+  vertical-align: middle;
+}
+
+.text-color-2 {
+  color: #27a4fe !important;
+}
+
+.body .listContainer .bestMentoringWrap .Box .textArea .textList {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.body .listContainer .bestMentoringWrap .Box .textArea .tag {
+  display: inline-block;
+  color: #27a4fe;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
