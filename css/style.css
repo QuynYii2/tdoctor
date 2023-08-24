@@ -2495,12 +2495,7 @@ li {
 .body .listContainer .bestMentoringWrap .Box {
   position: relative;
   width: 100%;
-  height: 275px;
-}
-.body .listContainer .bestMentoringWrap .Box .textArea {
-  height: 174px;
-  padding-left: 14px;
-  padding-bottom: 8px;
+  height: 100%;
 }
 .body .listContainer .bestMentoringWrap .Box .textArea .Topbanner {
   font-size: 13px;
@@ -2525,7 +2520,6 @@ li {
   cursor: pointer;
 }
 .body .listContainer .bestMentoringWrap .Box .textArea .clock {
-  float: right;
   color: #989898;
   vertical-align: middle;
 }
@@ -2541,6 +2535,7 @@ li {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
+  display: inline-block;
 }
 .body .listContainer .bestMentoringWrap .Box .textArea .tag {
   display: inline-block;

@@ -2755,13 +2755,8 @@ $background-color_1: #f5f5f5;
       .Box {
         position: relative;
         width: 100%;
-        height: 275px;
-        //border: 1px solid #cccccc;
-        //background-color: $background-color_1;
+        height: 100%;
         .textArea {
-          height: 174px;
-          padding-left: 14px;
-          padding-bottom: 8px;
           .Topbanner {
             font-size: 13px;
             font-weight: bold;
@@ -2785,7 +2780,6 @@ $background-color_1: #f5f5f5;
             cursor: pointer;
           }
           .clock {
-            float: right;
             color: $color_3;
             vertical-align: middle;
           }
@@ -2809,6 +2803,7 @@ $background-color_1: #f5f5f5;
               white-space: nowrap;
               vertical-align: middle;
               cursor: pointer;
+              display: inline-block;
             }
             .tag {
               display: inline-block;

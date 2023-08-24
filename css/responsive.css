@@ -254,6 +254,13 @@
     border-radius: 50%;
     background-color: white;
   }
+  .body .listContainer .bestMentoringWrap .Box .textArea li {
+    width: 100%;
+  }
+  .body .listContainer .bestMentoringWrap .Box .textArea .textList {
+    width: 50%;
+    display: block;
+  }
   .swiper-button-prev {
     margin-left: -10px;
     border: 1px solid black;
