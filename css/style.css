@@ -744,7 +744,7 @@ a {
 }
 .body .listContainer .bestMentoringWrap .bestMentoringContent a {
   color: #666666;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 28px;
 }
 .body .subContent {
@@ -2522,6 +2522,7 @@ li {
 .body .listContainer .bestMentoringWrap .Box .textArea .clock {
   color: #989898;
   vertical-align: middle;
+  display: block;
 }
 
 .text-color-2 {
@@ -2529,7 +2530,7 @@ li {
 }
 
 .body .listContainer .bestMentoringWrap .Box .textArea .textList {
-  width: 100px;
+  width: 70%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -799,7 +799,7 @@ $background-color_1: transparent;
           padding-top: 10px;
           a{
             color: #666666;
-            font-size: 14px;
+            font-size: 11px;
             line-height: 28px;
           }
         }
@@ -2782,6 +2782,7 @@ $background-color_1: #f5f5f5;
           .clock {
             color: $color_3;
             vertical-align: middle;
+            display: block;
           }
         }
       }
@@ -2797,7 +2798,7 @@ $background-color_1: #f5f5f5;
         .Box {
           .textArea {
             .textList {
-              width: 100px;
+              width: 70%;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
