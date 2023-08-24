@@ -1019,6 +1019,7 @@ $background-color_1: transparent;
           &:hover {
             border: 1px solid $main-color;
             border-radius: 10px;
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.09);
           }
         }
 
@@ -1562,6 +1563,21 @@ $color_5: #ed483f;
     }
   }
 }
+
+
+img:hover {
+  transform: scale(1.1);
+}
+
+img {
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.body .products .section .item-img img {
+  padding: 10px;
+}
+
 .more_from_seller_bx {
   .item_wrap {
     padding: 10px 0;

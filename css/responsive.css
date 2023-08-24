@@ -7,6 +7,12 @@
   }
 }
 @media (min-width: 768px) {
+  .body .mentor-detail h4 {
+    margin-bottom: 25px;
+  }
+  .body .mentor-detail h5 {
+    margin-bottom: 3px;
+  }
   .body .topboard_area .form-article .article-mobile {
     display: none;
   }
@@ -17,6 +23,39 @@
   }
 }
 @media (max-width: 768px) {
+  .body .mentor-detail h5 {
+    margin-bottom: 5px;
+  }
+  .body .mentor-detail h4 {
+    margin-bottom: 5px;
+  }
+  .footer-container .footer__block h3 {
+    font-size: 16px;
+  }
+  .footer-container .social__list-f li a span {
+    font-size: 12px;
+  }
+  .footer-container .menu__footer li {
+    margin-bottom: 5px;
+  }
+  .footer-container .menu__footer li a {
+    font-size: 12px;
+  }
+  .footer-container .address__list li span {
+    font-size: 14px;
+  }
+  .footer-container .address__list li a {
+    font-size: 14px;
+  }
+  .mentorBrdBottomCom {
+    display: none;
+  }
+  .body .listContainer .bestMentoringWrap .bestMentoringTitle {
+    font-size: 14px;
+  }
+  .body .listContainer .bestMentoringWrap .Box .textArea .Topbanner {
+    font-size: 14px;
+  }
   .body .banner {
     margin-top: 15px;
   }
@@ -129,7 +168,7 @@
     padding-top: 10px;
   }
   .body .listContainer .bestMentoringWrap .bestMentoringContent a {
-    font-size: 14px;
+    font-size: 11px;
     line-height: 28px;
   }
   .body .mainContentWrap .questionWrap .questionTitle {
@@ -241,6 +280,11 @@
     font-size: 12px;
     padding: 20px 10px;
     display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .body .mentor-detail h5 {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 992px) {
