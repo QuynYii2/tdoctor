@@ -2550,4 +2550,114 @@ li {
   margin-left: 5px;
 }
 
+.mentorBrdBottom {
+  width: 100%;
+  background-color: #f9f9f8;
+  margin-top: 12px;
+}
+
+.mentorBrdBottomCom {
+  padding: 20px 44px;
+  font-size: 0;
+}
+.mentorBrdBottomCom > * {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.boxSizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pagination-container {
+  text-align: center;
+}
+.pagination-container ul.pagination {
+  display: inline-block;
+}
+.pagination-container ul.pagination li {
+  float: left;
+  margin-right: 4px;
+}
+.pagination-container ul.pagination li a {
+  font-size: 13px;
+  color: #cccccc;
+  text-align: center;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 1px solid #cccccc;
+}
+.pagination-container ul.pagination li.active a {
+  color: #333333;
+  border-color: #333333;
+}
+
+.mentorBrdSearch {
+  border-top: 1px solid #eeeeee;
+}
+.mentorBrdSearch .mentorBrdSelect {
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+.mentorBrdSearch .mentorBrdTxt {
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+.mentorBrdSearch .mentorBrdBtn {
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.mentorBrdSelect {
+  width: 80px;
+  height: 32px;
+  border-radius: 0;
+}
+.mentorBrdSelect > option:nth-child(2) {
+  vertical-align: inherit;
+}
+
+input {
+  font-family: helvetica, Dotum, "돋움", "Apple SD Gothic Neo", sans-serif !important;
+}
+
+textarea {
+  font-family: helvetica, Dotum, "돋움", "Apple SD Gothic Neo", sans-serif !important;
+}
+
+select {
+  font-family: helvetica, Dotum, "돋움", "Apple SD Gothic Neo", sans-serif !important;
+}
+
+button {
+  font-family: helvetica, Dotum, "돋움", "Apple SD Gothic Neo", sans-serif !important;
+}
+
+.mentorBrdTxt {
+  width: 247px;
+  border-left: 0 !important;
+  height: 32px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+.mentorBrdBtn {
+  margin-left: 5px;
+  height: 32px;
+  width: 50px;
+  color: #666666;
+  text-align: center;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=style.css.map */
