@@ -9,7 +9,19 @@ $main-color: #0cbff1;
 }
 }
 @media (min-width: 768px){
-    .body{
+
+  .body {
+    .mentor-detail {
+      h4 {
+        margin-bottom: 25px;
+      }
+      h5 {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  .body{
         .topboard_area{
             .form-article{
                 .article{
@@ -27,7 +39,74 @@ $main-color: #0cbff1;
         }
     }
 @media (max-width: 768px){
-    .body{
+
+  .body {
+    .mentor-detail {
+      h5 {
+        margin-bottom: 5px;
+      }
+      h4 {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .footer-container {
+    .footer__block {
+      h3 {
+        font-size: 16px;
+      }
+    }
+    .social__list-f {
+      li {
+        a {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .menu__footer {
+      li {
+        a {
+          font-size: 12px;
+        }
+        margin-bottom: 5px;
+      }
+    }
+    .address__list {
+      li {
+        span {
+          font-size: 14px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .mentorBrdBottomCom {
+    display: none;
+  }
+    .body {
+      .listContainer {
+        .bestMentoringWrap {
+          .bestMentoringTitle {
+            font-size: 14px;
+          }
+          .Box {
+            .textArea {
+              .Topbanner {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  .body{
         .banner{
             margin-top: 15px;
             &-left{
@@ -155,7 +234,7 @@ $main-color: #0cbff1;
             .bestMentoringContent{
               padding-top: 10px;
               a{
-                font-size: 14px;
+                font-size: 11px;
                 line-height: 28px;
               }
             }
@@ -281,7 +360,15 @@ $main-color: #0cbff1;
     }
 
 }
-
+@media (min-width: 1200px) {
+  .body {
+    .mentor-detail {
+      h5 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
 @media (max-width: 992px){
     
   .swiper-button-next {
@@ -294,7 +381,25 @@ $main-color: #0cbff1;
     border-radius: 50%;
     background-color: white;
   }
-  
+
+  .body {
+    .listContainer {
+      .bestMentoringWrap {
+        .Box {
+          .textArea {
+            li {
+              width: 100%;
+            }
+            .textList {
+              width: 50%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .swiper-button-prev {
     margin-left: -10px;
     border: 1px solid black;
