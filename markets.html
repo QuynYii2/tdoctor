@@ -15,145 +15,12 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
     <title>Market page</title>
 </head>
 <body>
-<div>
-    <header class="header container-fluid">
-        <div class="header-desktop align-items-center row">
-            <div class="col-md-2 col-5 hd-desktop--left">
-                <a href="index.html">
-                    <img class="logo" src="img/logo.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-7 col-12 hd-desktop--between d-flex justify-content-center">
-                <div class="menu-item text-center"><a href="markets.html"><i class="fa-regular fa-newspaper"></i>
-                    <p>News</p></a></div>
-                <div class="menu-item text-center"><a href="mentors.html"><i class="fa-solid fa-laptop-medical"></i>
-                    <p>Mentoring</p></a></div>
-                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i>
-                    <p>Education Training</p></a></div>
-                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-user-doctor"></i>
-                    <p>Job Seeking</p></a></div>
-                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i>
-                    <p>New medicine</p></a></div>
-                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i>
-                    <p>Q&A</p></a></div>
-                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-tag"></i>
-                    <p>New Promotion</p></a></div>
-                <div class="menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i>
-                    <p>Event</p></a></div>
-            </div>
-            <div class="col-md-3 col-7 hd-desktop--right d-flex justify-content-center">
-                <i class="fa-solid fa-location-dot"></i>
-                <select class="form-local" aria-label="Default select example">
-                    <option value="1"><a href="#">Hoa Kỳ</a></option>
-                    <option value="2"><a href="#">Việt Nam</a></option>
-                </select>
-                <div class="form-login">
-                    <a href="#"><i class="fa-solid fa-user"></i> Login</a>
-                </div>
-            </div>
-        </div>
-        <div class="header-mobile row">
-            <div class="row header-mobile--top">
-                <div class="col-5 hd-desktop--left">
-                    <a href="index.html">
-                        <img class="logo" src="img/logo.png" alt="">
-                    </a>
-                </div>
-                <div class="col-7 hd-desktop--right d-flex justify-content-end">
-                    <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <a href=""><i class="fa-regular fa-bell"></i></a>
-                    <button onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
-                </div>
-            </div>
-            <div class="col-12 hd-desktop--between">
-                <div class="swiper mySwiper" id="mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide menu-item text-center"><a href="markets.html"><i class="fa-regular fa-newspaper"></i>
-                            <p>News</p></a></div>
-                        <div class="swiper-slide menu-item text-center"><a href="#"><i
-                                class="fa-solid fa-laptop-medical"></i>
-                            <p>Mentoring</p></a></div>
-                        <div class="swiper-slide menu-item text-center"><a href="mentors.html"><i class="fa-solid fa-school"></i>
-                            <p>Education Training</p></a></div>
-                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-user-doctor"></i>
-                            <p>Job Seeking</p></a></div>
-                        <div class="swiper-slide menu-item text-center"><a href="#"><i
-                                class="fa-solid fa-prescription-bottle-medical"></i>
-                            <p>New medicine</p></a></div>
-                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i>
-                            <p>Q&A</p></a></div>
-                        <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-tag"></i>
-                            <p>New Promotion</p></a></div>
-                        <div class="swiper-slide menu-item text-center"><a href="#"><i
-                                class="fa-solid fa-calendar-days"></i>
-                            <p>Event</p></a></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-            <div class="nav_menu" id="demo">
-                <div class="nav_menu--header d-flex justify-content-between">
-                    <div onclick="closeMenu()" class="header-left">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <div class="header-right">
-                        <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                    </div>
-                </div>
-                <div class="nav_menu--body">
-                    <div class="loginbox text-center">
-                        <a href="#">Log in now</a>
-                        <span> and connect to the worldwide Korean network > </span>
-                    </div>
-                    <div class="list-menu row">
-                        <div class="menu-item text-center col-3"><a href="markets.html"><i class="fa-regular fa-newspaper"></i>
-                            <p>News</p></a></div>
-                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-laptop-medical"></i>
-                            <p>Mentoring</p></a></div>
-                        <div class="menu-item text-center col-3"><a href="mentors.html"><i class="fa-solid fa-school"></i>
-                            <p>Education Training</p></a></div>
-                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-user-doctor"></i>
-                            <p>Job Seeking</p></a></div>
-                        <div class="menu-item text-center col-3"><a href="#"><i
-                                class="fa-solid fa-prescription-bottle-medical"></i>
-                            <p>New medicine</p></a></div>
-                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-headset"></i>
-                            <p>Q&A</p></a></div>
-                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-tag"></i>
-                            <p>New Promotion</p></a></div>
-                        <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-calendar-days"></i>
-                            <p>Event</p></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav_search" id="nav_search">
-                <div class="nav_search--header d-flex justify-content-between">
-                    <div onclick="closeSearch()" class="header-left">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </div>
-                <div class="nav_search--body">
-                    <div class="searchbox">
-                        <div class="input-group">
-                            <div class="form-outline">
-                                <input type="search" id="form1" class="form-control"
-                                       placeholder="Please enter a search term."/>
-                            </div>
-                            <button type="button" class="btn">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="body main_container d-flex justify-content-center container-fluid">
+<div id="header"></div>
+<div class="body main_container d-flex justify-content-center container-fluid">
         <div class="left_side_wrap">
             <div class="left_side_wrap_content">
                 <article class="category_bx">
@@ -1192,152 +1059,9 @@
             </div>
         </div>
     </div>
-    <hr>
-    <footer class="footer-container">
-        <div class="container">
-            <div class="row row__pd">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="footer__block">
-                        <h3>
-                            TDOCTOR
-                        </h3>
-                        <ul class="menu__footer">
-                            <li>
-                                <a href="../../vechungtoi">
-                                    Về chúng tôi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../../lienhe">
-                                    Liên hệ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../../quytrinh-giaiquyet-tranhchap">
-                                    Quy trình giải quyết tranh chấp
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../../chinhsach-baomat-thongtin-khachhang">
-                                    Chính sách bảo mật thông tin
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../../dang-ky-bac-si">
-                                    Đăng ký bác sĩ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../../dang-ky-phong-kham">
-                                    Đăng ký phòng khám
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="footer__block">
-                        <h3>
-                            LIÊN HỆ
-                        </h3>
-                        <ul class="social__list-f">
-                            <li>
-                                <a href="https://www.facebook.com/tdoctoronline/" class="d-flex align-items-center">
-                                    <img src="https://tdoctor.vn/public/v3/assets/image/fb.png" alt="Facebook của Tdoctor.vn">
-                                    <span>
-                                        Facebook
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/TDoctor2" class="d-flex align-items-center">
-                                    <img src="https://tdoctor.vn/public/v3/assets/image/logo-twitter-11549535419aik8i3pkro@2x.png" alt="Twitter của Tdoctor.vn">
-                                    <span>Twitter</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/tdoctor" class="d-flex align-items-center">
-                                    <img src="https://tdoctor.vn/public/v3/assets/image/in2x.png" alt="Linkedin của Tdoctor.vn">
-                                    <span>Linkedin</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCm3h1QVkgGg6xvyEHElMx7Q/videos" class="d-flex align-items-center">
-                                    <img src="https://tdoctor.vn/public/v3/assets/image/ytb-footer.png" alt="Youtube của Tdoctor.vn">
-                                    <span>Youtube</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/tdoctorcom/" class="d-flex align-items-center">
-                                    <img src="https://tdoctor.vn/public/v3/assets/image/unnamed@2x.png" alt="Instagram của Tdoctor.vn">
-                                    <span>Instagram</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6">
-                    <div class="footer__block">
-                        <h3>
-                            ĐỊA CHỈ
-                        </h3>
-                        <ul class="address__list">
-                            <li>
-                                <img src="https://tdoctor.vn/public/v3/assets/image/add.png" alt="Trụ sở của Tdoctor.vn">
-                                <span>
-                                    Trụ sở chính:&nbsp;V7B07 Shophouse Terra An Hưng, Đường Nguyễn Thanh Bình, Hà Đông, Hà Nội
-                                </span>
-                            </li>
-                            <li>
-                                <img src="https://tdoctor.vn/public/v3/assets/image/add.png" alt="Trụ sở 2 của Tdoctor.vn">
-                                <span>
-                                    Chi nhánh:&nbsp;Phòng 6.28, tòa nhà Everich Infinity, 290 An Dương Vương, phường 4, quận 5, Hồ Chí Minh
-                                </span>
-                            </li>
-                            <li>
-                                <img src="https://tdoctor.vn/public/v3/assets/image/mail.png" alt="Email của Tdoctor.vn">
-                                <a href="maito:tdoctorvn@gmail.com">
-                                    Liên hệ quảng cáo và hỗ trợ tdoctorvn@gmail.com
-                                </a>
-                            </li>
-                            <li>
-                                <img src="https://tdoctor.vn/public/v3/assets/image/check-blue.png" alt="Nơi đăng ký của Tdoctor.vn">
-                                <a href="">
-                                    Nơi đăng ký:&nbsp;7F Huỳnh Tấn Phát, Thị trấn Nhà Bè, Huyện Nhà Bè, Hồ Chí Minh
-                                </a>
-                            </li>
-                            <li>
-                                <img src="https://tdoctor.vn/public/v3/assets/image/phone-red.png" alt="Điện thoại của Tdoctor.vn">
-                                <a href="">
-                                    Hotline:&nbsp;+84 393 167 234
-                                </a>
-                            </li>
-                            <li>
-                                <img src="https://tdoctor.vn/public/v3/assets/image/add.png" alt="MST của Tdoctor.vn">
-                                <a href="">
-                                    MST: 0316725186
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="bottom_copyarea container d-flex justify-content-between">
-        <div class="bottom_copyarea--left"> © 1998-2022, HeyKorean, Inc. All Rights Reserved. <i
-                class="fa-regular fa-envelope"></i></div>
-        <div class="bottom_copyarea--right">
-            <i class="fa-solid fa-earth-asia"></i>
-            <select class="form-local" aria-label="Default select example">
-                <option value="1"><a href="#">Hoa Kỳ</a></option>
-                <option value="2"><a href="#">Việt Nam</a></option>
-            </select>
-        </div>
-    </div>
-</div>
-
+<div id="footer"></div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js"
         integrity="sha512-4Ooh3fl4STrmn95ZbS/J6l8csp/FvSKPaeDAH/IaPQGJIx9lmpuxXZTCYKR2W5+Bt7i74exPvAT2PsWnac+sow=="
@@ -1346,5 +1070,10 @@
         integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/style.js"></script>
-
+<script>
+    $(function (){
+        $('#header').load('/layout/header.html')
+        $('#footer').load('/layout/footer.html')
+    })
+</script>
 </html>

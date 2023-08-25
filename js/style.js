@@ -19,28 +19,6 @@ function closeSearch() {
   }
 
 
-  var swiper = new Swiper(".mySwiper", { 
-    slidesPerView: 5,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      600: {
-          slidesPerView: 7,
-          spaceBetween: 40,
-      },
-      1024: {
-          slidesPerView: 9,
-          spaceBetween: 50,
-      },
-  },
-  navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
-},
-});
 
 new Swiper(".listProduct", {
   slidesPerView: 3,
